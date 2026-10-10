@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { z } from "zod";
-import { ArrowLeft, ArrowRight, ShieldCheck } from "lucide-react";
+import { ArrowLeft, ArrowRight, ShieldCheck, LogIn } from "lucide-react";
+import "./login.css";
+import AuthStory from "./AuthStory";
 import { Brand } from "../landing/Landing";
 import { useAuth, useBrand } from "../../app/providers";
 import {
@@ -30,7 +32,7 @@ export function LoginForm() {
           type: "email",
           validation: email,
           autoComplete: "username",
-          placeholder: "you@business.com",
+          placeholder: "Email address",
         },
         {
           name: "password",
@@ -38,9 +40,10 @@ export function LoginForm() {
           type: "password",
           validation: z.string().min(1, "Enter your password.").max(128),
           autoComplete: "current-password",
+          placeholder: "Password",
         },
       ]}
-      submitLabel="Login to your workspace"
+      submitLabel="Sign In"
       onSubmit={async (v) => {
         const user = await api.login(v.email, v.password);
         navigate(safeReturnTo(params.get("returnTo"), user.role), {
@@ -48,9 +51,14 @@ export function LoginForm() {
         });
       }}
     >
-      <Link className="forgot-link" to="/forgot-password">
-        Forgot password?
-      </Link>
+      <div className="login-options">
+        <span>
+          <ShieldCheck size={14} aria-hidden="true" /> Secure sign-in
+        </span>
+        <Link className="forgot-link" to="/forgot-password">
+          Forgot password?
+        </Link>
+      </div>
     </Form>
   );
 }
@@ -67,12 +75,49 @@ export default function AuthPage({
     return captured;
   });
   const [done, setDone] = useState(false);
+  if (mode === "login") {
+    return (
+      <div className="reference-auth">
+        <AuthStory />
+        <main className="login-main">
+          <section className="login-card" aria-labelledby="login-heading">
+            <div className="login-card-heading">
+              <span className="login-symbol">
+                <LogIn size={26} aria-hidden="true" />
+              </span>
+              <h1 id="login-heading">Sign In</h1>
+              <p>Welcome back! Enter your credentials to continue.</p>
+            </div>
+            {params.get("reason") === "session" && (
+              <Alert>
+                Your session ended. Please sign in again. A full page reload
+                also requires login.
+              </Alert>
+            )}
+            {params.get("logout") === "unconfirmed" && (
+              <Alert>
+                Local sign-out is complete. Server session revocation could not
+                be confirmed because the request failed. Sign in again or
+                contact your administrator to revoke sessions.
+              </Alert>
+            )}
+            <LoginForm />
+            <p className="login-account">
+              Don't have an account?{" "}
+              <Link to="/register">
+                Register now <ArrowRight size={14} aria-hidden="true" />
+              </Link>
+            </p>
+            <Link to="/" className="login-home">
+              <ArrowLeft size={16} aria-hidden="true" /> Back to home
+            </Link>
+          </section>
+        </main>
+      </div>
+    );
+  }
   const heading =
-    mode === "login"
-      ? "Welcome back."
-      : mode === "forgot"
-        ? "Let’s get you back in."
-        : "Set a new password.";
+    mode === "forgot" ? "Let’s get you back in." : "Set a new password.";
   return (
     <div className="auth-page">
       <aside className="auth-story">
@@ -110,11 +155,9 @@ export default function AuthPage({
           </p>
           <h1>{heading}</h1>
           <p>
-            {mode === "login"
-              ? "Enter your credentials to open your workspace."
-              : mode === "forgot"
-                ? "Enter your account email to request reset instructions."
-                : "Choose 12–128 characters for your new password."}
+            {mode === "forgot"
+              ? "Enter your account email to request reset instructions."
+              : "Choose 12–128 characters for your new password."}
           </p>
           {params.get("reason") === "session" && (
             <Alert>
@@ -129,9 +172,7 @@ export default function AuthPage({
               your administrator to revoke sessions.
             </Alert>
           )}
-          {mode === "login" ? (
-            <LoginForm />
-          ) : done ? (
+          {done ? (
             <Alert success>
               {mode === "forgot"
                 ? "If the account exists, reset instructions will be delivered."
@@ -186,11 +227,11 @@ export default function AuthPage({
               }}
             />
           )}
-          {mode !== "login" && (
+          {
             <Link className="text-link" to="/login">
               Return to login <ArrowRight size={16} />
             </Link>
-          )}
+          }
           <div className="auth-help">
             <ShieldCheck size={17} />
             <p>

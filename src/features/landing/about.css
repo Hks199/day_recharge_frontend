@@ -1,0 +1,136 @@
+.about-page {
+  background: #f8fafc;
+}
+.about-container {
+  width: 100%;
+  max-width: 1170px;
+  padding-inline: 7.5px;
+  margin-inline: auto;
+}
+.about-main {
+  padding: 16px 8px;
+}
+.about-banner {
+  background: linear-gradient(135deg, #db2777, #1a1a2e);
+  padding: 80px 16px;
+  color: #fff;
+  text-align: center;
+}
+.about-banner h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin: 0 0 10px;
+}
+.lp .about-banner p {
+  max-width: 600px;
+  margin: 10px auto 0;
+  color: #ffffffcc;
+  line-height: 1.8;
+  font-size: 16px;
+}
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  column-gap: 15px;
+  padding-block: 72px 120px;
+}
+.lp .about-story h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #1a1a2e;
+  margin: 0 0 8px;
+}
+.lp .about-story p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+  margin: 0 0 16px;
+}
+.about-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 15px;
+}
+.about-feature {
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  background: #f8fafc;
+  min-width: 0;
+}
+.about-feature > svg {
+  color: #ec4899;
+  margin-inline: auto;
+}
+.lp .about-feature h3 {
+  color: #1a1a2e;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: normal;
+  margin: 8px 0 0;
+}
+.lp .about-feature p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #888;
+  margin: 4px 0 0;
+}
+@media (max-width: 1199px) {
+  .about-container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 991px) {
+  .about-container {
+    max-width: 720px;
+  }
+  .about-content {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 24px;
+    padding-block: 48px 72px;
+  }
+  .about-story {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .about-container {
+    max-width: 540px;
+  }
+}
+@media (max-width: 575px) {
+  .about-container {
+    padding-inline: 15px;
+  }
+  .about-banner {
+    padding: 60px 8px;
+  }
+  .about-banner h1 {
+    font-size: 34px;
+  }
+  .lp .about-banner p {
+    font-size: 15px;
+  }
+  .lp .about-story h2 {
+    font-size: 28px;
+  }
+  .lp .about-story p {
+    font-size: 15px;
+  }
+  .about-content {
+    padding-top: 42px;
+    padding-bottom: 55px;
+  }
+  .about-feature {
+    padding: 20px 10px;
+  }
+  .lp .about-feature p {
+    font-size: 12px;
+  }
+}

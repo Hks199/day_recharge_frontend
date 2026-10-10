@@ -262,7 +262,7 @@ export async function login(page: Page, role: Role) {
   await page
     .getByLabel("Password", { exact: true })
     .fill("test-account-password");
-  await page.getByRole("button", { name: "Login to your workspace" }).click();
+  await page.getByRole("button", { name: "Sign In" }).click();
   await expect(
     page.getByRole("heading", { name: "Good to see you, Asha." }),
   ).toBeVisible();

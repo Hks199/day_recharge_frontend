@@ -1,0 +1,84 @@
+/* Shared header rules take precedence over older page-specific header styles. */
+.lp .marketing-header .lp-nav-inner {
+  width: calc(100% - 64px);
+  max-width: none;
+  min-height: 110px;
+  gap: 10px;
+}
+.lp .marketing-header .lp-nav-inner > a:first-child {
+  margin-right: 34px;
+}
+.lp .marketing-header .brand > img.brand-local-logo {
+  width: 112px;
+  height: 72px;
+}
+.lp .marketing-header .lp-nav {
+  gap: 28px;
+  margin-right: auto;
+}
+.lp .marketing-header .lp-nav a {
+  padding: 14px 0;
+  font-size: 14px;
+  font-weight: 550;
+  color: #1e293b;
+}
+.lp .marketing-header .lp-nav a[aria-current="page"],
+.lp .marketing-header .lp-nav a:hover {
+  color: #c3207b;
+}
+.lp .marketing-header .lp-login,
+.lp .marketing-header .lp-header-start {
+  display: inline-flex;
+  min-height: 39px;
+  padding: 8px 20px;
+  font-size: 13px;
+}
+.lp .marketing-header .lp-login {
+  border-width: 2px;
+}
+.lp .marketing-header .lp-contact-mobile-login,
+.lp .marketing-header .lp-mobile-start {
+  display: none;
+}
+@media (max-width: 999px) {
+  .lp .marketing-header .lp-nav-inner > a:first-child {
+    margin-right: auto;
+  }
+  .lp .marketing-header .lp-login,
+  .lp .marketing-header .lp-header-start {
+    display: none;
+  }
+  .lp .marketing-header .lp-nav {
+    left: -32px;
+    right: -32px;
+    gap: 2px;
+    margin-right: 0;
+  }
+  .lp .marketing-header .lp-nav a {
+    padding: 13px 10px;
+    min-height: 48px;
+    font-size: 15px;
+  }
+  .lp .marketing-header .lp-nav.is-open .lp-contact-mobile-login,
+  .lp .marketing-header .lp-nav.is-open .lp-mobile-start {
+    display: block;
+  }
+}
+@media (max-width: 575px) {
+  .lp .marketing-header .lp-nav-inner {
+    width: calc(100% - 40px);
+    min-height: 98px;
+  }
+  .lp .marketing-header .brand > img.brand-local-logo {
+    width: 96px;
+    height: 62px;
+  }
+  .lp .marketing-header .lp-nav {
+    left: -20px;
+    right: -20px;
+  }
+  .lp .marketing-header .lp-menu {
+    margin-left: auto;
+    border: 0;
+  }
+}

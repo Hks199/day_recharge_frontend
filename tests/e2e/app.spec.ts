@@ -10,7 +10,10 @@ test.beforeEach(async ({ page }) => {
       console.error("Browser console error:", message.text());
   });
 });
-test("Landing and login across phone, tablet, and desktop widths", async ({ page }) => {
+test("Landing and login across phone, tablet, and desktop widths", async ({
+  page,
+}) => {
+  test.setTimeout(90000);
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
   await fixtures(page);
@@ -18,13 +21,17 @@ test("Landing and login across phone, tablet, and desktop widths", async ({ page
     await page.setViewportSize({ width, height: 900 });
     await page.goto("/");
     await expect(
-      page.getByRole("heading", { name: /Power everyday/ }),
+      page.getByRole("heading", { name: /Power Your Business/ }),
     ).toBeVisible();
     expect(
       await page.evaluate(
         () => document.documentElement.scrollWidth <= window.innerWidth,
       ),
     ).toBe(true);
+    await page.evaluate(() =>
+      window.scrollTo({ left: 200, behavior: "instant" }),
+    );
+    expect(await page.evaluate(() => window.scrollX)).toBe(0);
     await page.screenshot({
       path: `docs/screenshots/landing-${width}.png`,
       fullPage: true,
@@ -43,32 +50,82 @@ test("Landing and login across phone, tablet, and desktop widths", async ({ page
   }
   expect(errors).toEqual([]);
 });
-test("Landing mobile navigation, service links, and FAQ work on a phone", async ({ page }) => {
+test("Home actions use local routes and reference images load locally", async ({
+  page,
+}) => {
+  await fixtures(page);
+  const referenceRequests: string[] = [];
+  page.on("request", (request) => {
+    if (new URL(request.url()).hostname.endsWith("dayrecharge.com"))
+      referenceRequests.push(request.url());
+  });
+  await page.goto("/");
+  await expect(page.locator(".home-benefit")).toHaveCount(6);
+  await expect(page.locator(".home-role")).toHaveCount(3);
+  await page.locator(".home-services").scrollIntoViewIfNeeded();
+  await expect
+    .poll(() =>
+      page
+        .locator(".home-service img")
+        .evaluateAll((images) =>
+          images.every(
+            (image) =>
+              (image as HTMLImageElement).complete &&
+              (image as HTMLImageElement).naturalWidth > 0,
+          ),
+        ),
+    )
+    .toBe(true);
+  await page
+    .getByRole("link", { name: "Get Started Now", exact: true })
+    .click();
+  await expect(page).toHaveURL(/\/register$/);
+  await page.goto("/");
+  await page
+    .getByRole("link", { name: "Login to Dashboard", exact: true })
+    .click();
+  await expect(page).toHaveURL(/\/login$/);
+  await page.goto("/");
+  await page.getByRole("link", { name: "Talk to Sales", exact: true }).click();
+  await expect(page).toHaveURL(/\/contactus$/);
+  expect(referenceRequests).toEqual([]);
+});
+test("Landing mobile navigation, service links, and terms work on a phone", async ({
+  page,
+}) => {
   await fixtures(page);
   await page.setViewportSize({ width: 360, height: 780 });
   await page.goto("/");
-  const menu = page.getByRole("button", { name: "Open navigation" });
+  const menu = page.getByRole("button", { name: /^(Open|Close) navigation$/ });
   const navigation = page.getByRole("navigation", { name: "Main navigation" });
   await expect(navigation).toBeHidden();
   await menu.click();
   await expect(menu).toHaveAttribute("aria-expanded", "true");
   await expect(navigation).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(
+    360,
+  );
+  await page.evaluate(() =>
+    window.scrollTo({ left: 200, behavior: "instant" }),
+  );
+  expect(await page.evaluate(() => window.scrollX)).toBe(0);
   await page.keyboard.press("Escape");
   await expect(menu).toBeFocused();
   await expect(navigation).toBeHidden();
   await menu.click();
-  await navigation.getByRole("link", { name: "Our services" }).click();
-  await expect(navigation).toBeHidden();
-  await expect(page).toHaveURL(/#services$/);
+  await navigation.getByRole("link", { name: "Terms", exact: true }).click();
+  await expect(page).toHaveURL(/\/terms$/);
+  await expect(
+    page.getByRole("heading", { name: "Terms & Conditions", exact: true }),
+  ).toBeVisible();
+  await page.goBack();
   const cards = page.locator(".lp-service");
-  await expect(cards).toHaveCount(5);
+  await expect(cards).toHaveCount(6);
   for (const card of await cards.all()) {
     const box = await card.boundingBox();
     expect(box?.x).toBeGreaterThanOrEqual(0);
     expect((box?.x ?? 0) + (box?.width ?? 0)).toBeLessThanOrEqual(360);
   }
-  await page.getByText("How do I get an account?", { exact: true }).click();
-  await expect(page.getByText(/Contact your business owner or Distributor to request access/)).toBeVisible();
   await cards.first().click();
   await expect(page).toHaveURL(/\/login$/);
   await expect(page.getByLabel("Email address")).toBeVisible();

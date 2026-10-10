@@ -12,7 +12,12 @@ import { allowedPath, homes } from "../lib/permissions";
 import { Alert, Button, Card, ErrorPanel, Loading } from "../components/ui";
 import type { Role } from "../types/contracts";
 const Landing = lazy(() => import("../features/landing/Landing"));
+const About = lazy(() => import("../features/landing/About"));
+const Contact = lazy(() => import("../features/landing/Contact"));
+const Terms = lazy(() => import("../features/landing/Terms"));
+const Privacy = lazy(() => import("../features/landing/Privacy"));
 const AuthPage = lazy(() => import("../features/auth/AuthPages"));
+const RegisterPage = lazy(() => import("../features/auth/RegisterPage"));
 const Shell = lazy(() => import("../components/layout/Shell"));
 const Dashboard = lazy(() => import("../features/reports/Dashboard"));
 function named<T extends Record<string, unknown>, K extends keyof T>(
@@ -225,7 +230,13 @@ export const router = createBrowserRouter([
     errorElement: <RouteError />,
     children: [
       { path: "/", element: <Landing /> },
+      { path: "/aboutus", element: <About /> },
+      { path: "/contactus", element: <Contact /> },
+      { path: "/terms", element: <Terms /> },
+      { path: "/privacy", element: <Privacy /> },
+      { path: "/term", element: <Navigate to="/terms" replace /> },
       { path: "/login", element: <AuthPage /> },
+      { path: "/register", element: <RegisterPage /> },
       { path: "/forgot-password", element: <AuthPage mode="forgot" /> },
       { path: "/reset-password", element: <AuthPage mode="reset" /> },
       ...Object.entries(homes).map(([role, home]) => ({

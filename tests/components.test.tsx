@@ -59,7 +59,7 @@ describe("Login and form behavior", () => {
       .mockResolvedValue(makeSession("RETAILER").user);
     loginRender();
     await u.click(
-      screen.getByRole("button", { name: "Login to your workspace" }),
+      screen.getByRole("button", { name: "Sign In" }),
     );
     expect(login).not.toHaveBeenCalled();
     await u.type(
@@ -68,7 +68,7 @@ describe("Login and form behavior", () => {
     );
     await u.type(screen.getByLabelText("Password", { exact: true }), "x");
     await u.click(
-      screen.getByRole("button", { name: "Login to your workspace" }),
+      screen.getByRole("button", { name: "Sign In" }),
     );
     await waitFor(() =>
       expect(login).toHaveBeenCalledWith("retailer@example.com", "x"),
@@ -110,7 +110,7 @@ describe("Login and form behavior", () => {
       "password",
     );
     await u.click(
-      screen.getByRole("button", { name: "Login to your workspace" }),
+      screen.getByRole("button", { name: "Sign In" }),
     );
     expect(
       await screen.findByText("Email or password is incorrect."),

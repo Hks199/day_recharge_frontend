@@ -329,11 +329,13 @@ export function PasswordInput<T extends FieldValues>({
   register,
   autoComplete,
   invalid,
+  placeholder,
 }: {
   name: Path<T>;
   register: UseFormRegister<T>;
   autoComplete?: string;
   invalid?: boolean;
+  placeholder?: string;
 }) {
   const [show, setShow] = useState(false);
   return (
@@ -344,6 +346,7 @@ export function PasswordInput<T extends FieldValues>({
         id={name}
         autoComplete={autoComplete ?? "current-password"}
         aria-invalid={invalid}
+        placeholder={placeholder}
       />
       <button
         type="button"
@@ -436,6 +439,7 @@ export function Form({
                 register={register}
                 autoComplete={f.autoComplete}
                 invalid={!!errors[f.name]}
+                placeholder={f.placeholder}
               />
             ) : f.type === "select" ? (
               <div className="select-wrap">
