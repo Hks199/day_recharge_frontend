@@ -12,6 +12,7 @@ import { allowedPath, homes } from "../lib/permissions";
 import { Alert, Button, Card, ErrorPanel, Loading } from "../components/ui";
 import type { Role } from "../types/contracts";
 const Landing = lazy(() => import("../features/landing/Landing"));
+const WebsitePage = lazy(() => import("../features/settings/WebsitePage"));
 const About = lazy(() => import("../features/landing/About"));
 const Contact = lazy(() => import("../features/landing/Contact"));
 const Terms = lazy(() => import("../features/landing/Terms"));
@@ -194,6 +195,7 @@ class Boundary extends Component<{ children: ReactNode }, { failed: boolean }> {
   }
 }
 const pages = [
+  { path: "website", element: <WebsitePage /> },
   { path: "dashboard", element: <Dashboard /> },
   { path: "profile", element: <Profile /> },
   { path: "wallet", element: <Wallet /> },

@@ -1,4 +1,5 @@
-﻿import { Link } from "react-router-dom";
+import { useWebsite } from "../../app/website";
+import { Link } from "react-router-dom";
 import {
   ArrowRight,
   BarChart3,
@@ -19,82 +20,110 @@ import "./landing.css";
 import "./reference-theme.css";
 import "./home.css";
 export { Brand } from "./Brand";
-const services = [
-  { title: "Prepaid Recharge", image: "recharge.png", color: "#eef2ff" },
-  { title: "Postpaid Bill", image: "api.png", color: "#f0fdf4" },
-  { title: "DTH Recharge", image: "dth.png", color: "#fff7ed" },
-  { title: "Electricity", image: "api.png", color: "#fef3c7" },
-  { title: "Bill Payments", image: "BBPS_Logo.png", color: "#eef2ff" },
-  { title: "Wallet Transfers", image: "api.png", color: "#f0fdf4" },
-];
-const benefits = [
-  {
-    icon: Zap,
-    title: "Recharge Processing",
-    text: "Submit supported payments and track their status in your workspace.",
-    color: "#db2777",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Secure Access",
-    text: "Account permissions keep each workspace scoped to its assigned role.",
-    color: "#10b981",
-  },
-  {
-    icon: Wallet,
-    title: "Transparent Commissions",
-    text: "Review commission records and the rules set by your business.",
-    color: "#f59e0b",
-  },
-  {
-    icon: BarChart3,
-    title: "Transaction Reports",
-    text: "Find payment history, wallet statements, and business activity together.",
-    color: "#3b82f6",
-  },
-  {
-    icon: Network,
-    title: "Connected Network",
-    text: "Manage authorized Retailers and Distributors from one workspace.",
-    color: "#9333ea",
-  },
-  {
-    icon: Smartphone,
-    title: "Your Business Identity",
-    text: "Use your business branding on a verified custom domain.",
-    color: "#10b981",
-  },
-];
-const roles = [
-  {
-    icon: Store,
-    title: "Retailer",
-    text: "Serve your customers with supported recharges and bill payments.",
-    highlight: "Recharge & Bills",
-    caption: "Your customer workspace",
-    color: "retailer",
-    to: "/register",
-  },
-  {
-    icon: Network,
-    title: "Distributor",
-    text: "Support your authorized Retailers and manage your business network.",
-    highlight: "Retail Network",
-    caption: "Connected business tools",
-    color: "distributor",
-    to: "/register",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Business Owner",
-    text: "Manage your business, branding, commission rules, and team access.",
-    highlight: "Business Control",
-    caption: "Your tenant workspace",
-    color: "owner",
-    to: "/contactus",
-  },
-];
+
 export default function Landing() {
+  const website = useWebsite();
+  const content = website.text;
+  const services = [
+    {
+      title: content("home.title.1"),
+      image: content("home.image.2"),
+      color: content("home.color.3"),
+    },
+    {
+      title: content("home.title.4"),
+      image: content("home.image.5"),
+      color: content("home.color.6"),
+    },
+    {
+      title: content("home.title.7"),
+      image: content("home.image.8"),
+      color: content("home.color.9"),
+    },
+    {
+      title: content("home.title.10"),
+      image: content("home.image.11"),
+      color: content("home.color.12"),
+    },
+    {
+      title: content("home.title.13"),
+      image: content("home.image.14"),
+      color: content("home.color.15"),
+    },
+    {
+      title: content("home.title.16"),
+      image: content("home.image.17"),
+      color: content("home.color.18"),
+    },
+  ];
+  const benefits = [
+    {
+      icon: Zap,
+      title: content("home.title.19"),
+      text: content("home.text.20"),
+      color: content("home.color.21"),
+    },
+    {
+      icon: ShieldCheck,
+      title: content("home.title.22"),
+      text: content("home.text.23"),
+      color: content("home.color.24"),
+    },
+    {
+      icon: Wallet,
+      title: content("home.title.25"),
+      text: content("home.text.26"),
+      color: content("home.color.27"),
+    },
+    {
+      icon: BarChart3,
+      title: content("home.title.28"),
+      text: content("home.text.29"),
+      color: content("home.color.30"),
+    },
+    {
+      icon: Network,
+      title: content("home.title.31"),
+      text: content("home.text.32"),
+      color: content("home.color.33"),
+    },
+    {
+      icon: Smartphone,
+      title: content("home.title.34"),
+      text: content("home.text.35"),
+      color: content("home.color.36"),
+    },
+  ];
+  const roles = [
+    {
+      icon: Store,
+      title: content("home.title.37"),
+      text: content("home.text.38"),
+      highlight: content("home.highlight.39"),
+      caption: content("home.caption.40"),
+      color: "retailer",
+      to: content("home.to.41"),
+    },
+    {
+      icon: Network,
+      title: content("home.title.42"),
+      text: content("home.text.43"),
+      highlight: content("home.highlight.44"),
+      caption: content("home.caption.45"),
+      color: "distributor",
+      to: content("home.to.46"),
+    },
+    {
+      icon: ShieldCheck,
+      title: content("home.title.47"),
+      text: content("home.text.48"),
+      highlight: content("home.highlight.49"),
+      caption: content("home.caption.50"),
+      color: "owner",
+      to: content("home.to.51"),
+    },
+  ];
+
   return (
     <div className="lp lp-reference home-page">
       <MarketingHeader />
@@ -106,48 +135,50 @@ export default function Landing() {
             <div className="home-hero-copy">
               <div className="home-badge">
                 <span />
-                Your B2B Recharge & Payment Platform
+                {content("home.div.52")}
               </div>
               <h1>
-                Power Your Business
+                {content("home.h1.53")}
                 <br />
-                With <span>Digital Services</span>
+                {content("home.h1.54")} <span>{content("home.span.55")}</span>
               </h1>
-              <p className="home-subtitle">
-                Mobile recharge, bill payments, and wallet management — all in
-                one connected dashboard. Built for retailers, distributors, and
-                business owners.
-              </p>
+              <p className="home-subtitle">{content("home.p.56")}</p>
               <div className="home-actions">
-                <Link className="home-button" to="/register">
+                <Link className="home-button" to={content("home.to.57")}>
                   <Rocket size={17} aria-hidden="true" />
-                  Get Started Now
+                  {content("home.Link.58")}
                 </Link>
-                <Link className="home-button home-glass" to="/login">
-                  Login to Dashboard
+                <Link
+                  className="home-button home-glass"
+                  to={content("home.to.59")}
+                >
+                  {content("home.Link.60")}
                   <ArrowRight size={17} aria-hidden="true" />
                 </Link>
-                <Link className="home-button home-green" to="/contactus">
+                <Link
+                  className="home-button home-green"
+                  to={content("home.to.61")}
+                >
                   <Headphones size={17} aria-hidden="true" />
-                  Contact Support
+                  {content("home.Link.62")}
                 </Link>
               </div>
               <div className="home-stats" aria-label="Platform capabilities">
                 <div>
-                  <strong>Recharge</strong>
-                  <span>Everyday Services</span>
+                  <strong>{content("home.strong.63")}</strong>
+                  <span>{content("home.span.64")}</span>
                 </div>
                 <div>
-                  <strong>Wallet</strong>
-                  <span>Clear Records</span>
+                  <strong>{content("home.strong.65")}</strong>
+                  <span>{content("home.span.66")}</span>
                 </div>
                 <div>
-                  <strong>Reports</strong>
-                  <span>Track Activity</span>
+                  <strong>{content("home.strong.67")}</strong>
+                  <span>{content("home.span.68")}</span>
                 </div>
                 <div>
-                  <strong>Teams</strong>
-                  <span>Role-Based Access</span>
+                  <strong>{content("home.strong.69")}</strong>
+                  <span>{content("home.span.70")}</span>
                 </div>
               </div>
             </div>
@@ -157,32 +188,32 @@ export default function Landing() {
             >
               <img
                 className="home-art"
-                src="/images/digital-services.png"
-                alt="Team working together with digital tools"
+                src={content("home.src.71")}
+                alt={content("home.alt.72")}
                 width="587"
                 height="250"
                 fetchPriority="high"
               />
               <div className="home-float home-transaction">
-                <small>PAYMENT WORKFLOW</small>
+                <small>{content("home.small.73")}</small>
                 <div>
                   <span className="home-check">
                     <Check size={20} aria-hidden="true" />
                   </span>
                   <div>
-                    <strong>Recharge & Bills</strong>
-                    <span>Submit, review, and track</span>
+                    <strong>{content("home.strong.74")}</strong>
+                    <span>{content("home.span.75")}</span>
                   </div>
                 </div>
               </div>
               <div className="home-float home-earnings">
-                <small>YOUR DAILY WORKSPACE</small>
-                <strong>Wallet Control</strong>
-                <span>Balance, funding & history</span>
+                <small>{content("home.small.76")}</small>
+                <strong>{content("home.strong.77")}</strong>
+                <span>{content("home.span.78")}</span>
               </div>
               <div className="home-float home-online">
                 <span />
-                Role-based access
+                {content("home.div.79")}
               </div>
             </div>
           </div>
@@ -190,17 +221,14 @@ export default function Landing() {
         <section id="services" className="home-services">
           <div className="home-container">
             <div className="home-section-heading">
-              <span className="home-tag">Our Services</span>
-              <h2>Everything You Need in One Place</h2>
-              <p>
-                One workspace for recharges, supported bill payments, and your
-                wallet.
-              </p>
+              <span className="home-tag">{content("home.span.80")}</span>
+              <h2>{content("home.h2.81")}</h2>
+              <p>{content("home.p.82")}</p>
             </div>
             <div className="home-service-grid">
               {services.map((s) => (
                 <Link
-                  to="/login"
+                  to={content("home.to.83")}
                   className="lp-service home-service"
                   key={s.title}
                   aria-label={`Login for ${s.title}`}
@@ -210,7 +238,7 @@ export default function Landing() {
                     style={{ background: s.color }}
                   >
                     <img
-                      src={`/images/${s.image}`}
+                      src={s.image}
                       alt=""
                       width="38"
                       height="38"
@@ -226,15 +254,12 @@ export default function Landing() {
         <section id="why-us" className="home-why">
           <div className="home-container home-why-grid">
             <div id="how-it-works" className="home-why-copy">
-              <span className="home-tag">Why Choose Us</span>
-              <h2>Built for Serious Fintech Businesses</h2>
+              <span className="home-tag">{content("home.span.84")}</span>
+              <h2>{content("home.h2.85")}</h2>
               <div className="home-divider" />
-              <p>
-                Bring your payments, wallet records, commissions, and business
-                network together. Clear tools for each part of your working day.
-              </p>
-              <Link to="/register" className="home-button">
-                Get Started
+              <p>{content("home.p.86")}</p>
+              <Link to={content("home.to.87")} className="home-button">
+                {content("home.Link.88")}
                 <ArrowRight size={17} aria-hidden="true" />
               </Link>
             </div>
@@ -257,8 +282,8 @@ export default function Landing() {
         <section id="business-models" className="home-models">
           <div className="home-container">
             <div className="home-section-heading">
-              <span className="home-tag">Business Models</span>
-              <h2>Choose Your Role & Get Connected</h2>
+              <span className="home-tag">{content("home.span.89")}</span>
+              <h2>{content("home.h2.90")}</h2>
             </div>
             <div className="home-role-grid">
               {roles.map((r) => (
@@ -277,7 +302,9 @@ export default function Landing() {
                       <span>{r.caption}</span>
                     </div>
                     <Link to={r.to}>
-                      {r.color === "owner" ? "Contact Us" : "Join Now"}
+                      {r.color === "owner"
+                        ? content("home.roleContact")
+                        : content("home.roleJoin")}
                       <ArrowRight size={14} aria-hidden="true" />
                     </Link>
                   </div>
@@ -289,18 +316,21 @@ export default function Landing() {
         <section id="contact" className="home-cta-wrap">
           <div className="home-container">
             <div className="home-cta">
-              <h2>Ready to Grow Your Business?</h2>
-              <p>
-                Connect with your business administrator and get the tools to
-                manage your everyday digital services.
-              </p>
+              <h2>{content("home.h2.91")}</h2>
+              <p>{content("home.p.92")}</p>
               <div className="home-actions">
-                <Link className="home-button home-white" to="/register">
+                <Link
+                  className="home-button home-white"
+                  to={content("home.to.93")}
+                >
                   <UserRoundPlus size={18} aria-hidden="true" />
-                  Request an Account
+                  {content("home.Link.94")}
                 </Link>
-                <Link className="home-button home-glass" to="/contactus">
-                  Talk to Sales
+                <Link
+                  className="home-button home-glass"
+                  to={content("home.to.95")}
+                >
+                  {content("home.Link.96")}
                   <ArrowRight size={17} aria-hidden="true" />
                 </Link>
               </div>

@@ -4,17 +4,18 @@
 
 ## Authentication
 
-Configured platform hostnames select `/platform/auth`; all other hosts require public `/public/tenant-config` and select `/auth`. Credentials are never retried against another prefix. Login/refresh normalize `user.id` and model `_id`. Unknown roles are rejected. Roles redirect to `/platform/dashboard`, `/admin/dashboard`, `/distributor/dashboard`, or `/retailer/dashboard`. Guards apply to role and permitted route, including direct URL entry.
+Configured platform hostnames select `/platform/auth` and load `/platform/public/website`; all other hosts require the domain-scoped `/public/website` endpoint and select `/auth`. Credentials are never retried against another prefix. Login/refresh normalize `user.id` and model `_id`. Unknown roles are rejected. Roles redirect to `/platform/dashboard`, `/admin/dashboard`, `/distributor/dashboard`, or `/retailer/dashboard`. Guards apply to role and permitted route, including direct URL entry.
 
 Bearer and CSRF tokens remain in memory, refresh remains an HTTP-only cookie. Protected 401s share one refresh flight; a late response with an old bearer retries with the replacement token. Explicit revocation clears the session. A retry is bounded to one; 403 and auth endpoints never enter a refresh loop. Web Locks serialize refresh cookie rotation across tabs, and BroadcastChannel invalidates other tabs when the cookie changes. No automatic reload restoration exists because no CSRF bootstrap endpoint exists. Logout calls the backend and clears local credentials/cache even on network failure, with an unconfirmed-revocation message.
 
-Query keys include deployment host, authenticated tenant ID, and user ID. Query cancellation and cache clearing occur on logout and identity change. Response completion cannot deliver another user's data after identity changes. Profile supports only name/phone, password change revokes sessions, DELETE sessions signs out, reset request uses the generic success message only after API acceptance. Reset token URL is removed immediately after capture, without analytics.
+Private query keys include deployment host, authenticated tenant ID, and user ID. Private queries and mutations are cleared on logout and identity change. Only the host's public website query is retained, so authentication does not unmount public branding or interrupt navigation. Response completion cannot deliver another user's protected data after identity changes. Profile supports only name/phone, password change revokes sessions, DELETE sessions signs out, reset request uses the generic success message only after API acceptance. Reset token URL is removed immediately after capture, without analytics.
 
 ## Page mapping
 
 | UI                                  | Endpoint paths relative to API base                                                                                                                     |
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Public branding                     | GET `/public/tenant-config`                                                                                                                             |
+| Public website and branding          | GET `/platform/public/website` or `/public/website`, selected by host |
+| Public website editor                | GET/PATCH `/platform/website` (DEVELOPER) or `/tenant/website` (SUPER_ADMIN), with revision checks |
 | Shared login/profile/security/reset | `/auth/*` or `/platform/auth/*` matching deployment                                                                                                     |
 | Tenant dashboard                    | GET `/reports/dashboard`, GET `/wallet`, GET `/recharges`                                                                                               |
 | Developer dashboard                 | GET `/platform/dashboard` only; never tenant wallet/notifications                                                                                       |

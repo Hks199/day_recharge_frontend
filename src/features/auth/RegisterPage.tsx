@@ -13,7 +13,6 @@ import {
   UserRoundPlus,
 } from "lucide-react";
 import { useBrand } from "../../app/providers";
-import { isPlatform } from "../../lib/api/client";
 import AuthStory from "./AuthStory";
 import "./login.css";
 import "./register.css";
@@ -32,8 +31,7 @@ type AccessRequest = z.infer<typeof requestSchema>;
 
 export default function RegisterPage() {
   const brand = useBrand();
-  const supportEmail =
-    brand.support.email || (isPlatform ? "dayrecharge@gmail.com" : undefined);
+  const supportEmail = brand.support.email;
   const [draftOpened, setDraftOpened] = useState(false);
   const {
     register,

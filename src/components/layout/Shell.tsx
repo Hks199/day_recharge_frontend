@@ -217,6 +217,7 @@ export default function Shell() {
                 }
                 navigate(`/login${failed ? "?logout=unconfirmed" : ""}`, {
                   replace: true,
+                  flushSync: true,
                 });
               }}
             >

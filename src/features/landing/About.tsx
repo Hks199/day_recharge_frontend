@@ -1,3 +1,4 @@
+import { useWebsite } from "../../app/website";
 import { useEffect } from "react";
 import { Zap, ShieldCheck, Network, IndianRupee } from "lucide-react";
 import { useBrand } from "../../app/providers";
@@ -7,26 +8,32 @@ import "./landing.css";
 import "./reference-theme.css";
 import "./about.css";
 
-const features = [
-  { icon: Zap, title: "Fast", description: "A streamlined payment workflow" },
-  {
-    icon: ShieldCheck,
-    title: "Secure",
-    description: "Role-based account access",
-  },
-  {
-    icon: Network,
-    title: "Connected",
-    description: "Your business network, together",
-  },
-  {
-    icon: IndianRupee,
-    title: "Transparent",
-    description: "Clear commissions & reports",
-  },
-];
-
 export default function About() {
+  const website = useWebsite();
+  const content = website.text;
+  const features = [
+    {
+      icon: Zap,
+      title: content("about.title.1"),
+      description: content("about.description.2"),
+    },
+    {
+      icon: ShieldCheck,
+      title: content("about.title.3"),
+      description: content("about.description.4"),
+    },
+    {
+      icon: Network,
+      title: content("about.title.5"),
+      description: content("about.description.6"),
+    },
+    {
+      icon: IndianRupee,
+      title: content("about.title.7"),
+      description: content("about.description.8"),
+    },
+  ];
+
   const brand = useBrand();
   useEffect(() => {
     const previous = document.title;
@@ -42,11 +49,8 @@ export default function About() {
       <main id="main-content" className="about-main">
         <section className="about-banner" aria-labelledby="about-heading">
           <div className="about-container">
-            <h1 id="about-heading">About Us</h1>
-            <p>
-              A connected platform for your everyday recharge, bill payments,
-              and business network.
-            </p>
+            <h1 id="about-heading">{content("about.h1.9")}</h1>
+            <p>{content("about.p.10")}</p>
           </div>
         </section>
         <section
@@ -54,19 +58,11 @@ export default function About() {
           aria-labelledby="who-heading"
         >
           <div className="about-story">
-            <h2 id="who-heading">Who We Are</h2>
+            <h2 id="who-heading">{content("about.h2.11")}</h2>
             <p>
-              {brand.name} brings recharge and supported bill payments into a
-              shared business workspace. Business owners, Distributors, and
-              Retailers can manage their authorized activities, serve customers,
-              and follow each payment through to its final status.
+              {brand.name} {content("about.p.12")}
             </p>
-            <p>
-              With role-based access, wallet records, and commission tracking,
-              the platform keeps your business activity organized. Review
-              transactions, manage your network, and see the details that matter
-              in one place.
-            </p>
+            <p>{content("about.p.13")}</p>
           </div>
           <div className="about-feature-grid">
             {features.map((feature) => (

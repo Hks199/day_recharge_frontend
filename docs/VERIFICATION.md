@@ -35,3 +35,11 @@ No permitted real account credentials or isolated authenticated backend were sup
 Initial concurrent checks exhausted available host memory. Sequential checks and single-worker tests succeeded. An unrelated application already used localhost's IPv6 port 5173, so this frontend uses **5179**. Initial browser fixtures also matched a source module path containing `/api/`; interception was corrected to match only API pathname prefixes. Component tests caught and verified the fix for dialog focus restoration. Dependency annotation comments in the installed Zod build produce harmless Rollup warnings; the build succeeds and no chunk exceeds the configured 500 kB warning threshold.
 
 Production preview browser result: **17/17 passed** against the final built artifacts. Docker/nginx packaging is supplied as a deployment example and was not executed in this frontend verification.
+
+## Public website content update
+
+Both repositories passed production builds and ESLint. Backend integration: **40 tests passed** against an isolated MongoDB replica set. Frontend unit/component: **49 tests passed**. The final complete browser run passed 37 of 38 scenarios; the remaining navigation test measured a temporarily hidden header during lazy loading. Its measurement now waits for a visible bounding box. The targeted navigation and website suite then passed **5/5**, completing verification of all 38 scenarios.
+
+New checks cover backend defaults, persisted branding/content, simultaneous edits, stale revisions, tenant and platform isolation, owner permissions, unknown fields, unsafe image/navigation URLs, legacy settings synchronization, safe plain-text rendering, shared logos/support details, mobile overflow, successful publishing, draft retention after conflicts, and keeping public content mounted during login. Logout notices remain correct after private cache cleanup.
+
+Browser checks use isolated API fixtures; backend integration tests exercise the real Express routes and MongoDB transactions. No production records were written. The frontend dev server remains on port 5179; its configured API target on port 3000 was not running during this update. Start the backend with its configured MongoDB/Redis services to use the editor outside tests. See [backend website setup](../../day_recharge_backend/docs/PUBLIC_WEBSITE.md).

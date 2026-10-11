@@ -1,10 +1,10 @@
+import { useWebsite } from "../../app/website";
 import { useEffect, useState } from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useBrand } from "../../app/providers";
-import { isPlatform } from "../../lib/api/client";
 import MarketingHeader from "./MarketingHeader";
 import Footer from "./Footer";
 import "./landing.css";
@@ -27,10 +27,12 @@ const messageSchema = z.object({
 type Message = z.infer<typeof messageSchema>;
 
 export default function Contact() {
+  const website = useWebsite();
+  const content = website.text;
+
   const brand = useBrand();
-  const phone = brand.support.phone || (isPlatform ? "7828222210" : undefined);
-  const email =
-    brand.support.email || (isPlatform ? "dayrecharge@gmail.com" : undefined);
+  const phone = brand.support.phone;
+  const email = brand.support.email;
   const [draftOpened, setDraftOpened] = useState(false);
   const {
     register,
@@ -60,8 +62,10 @@ export default function Contact() {
       <main id="main-content" className="contact-main">
         <section className="contact-hero" aria-labelledby="contact-heading">
           <div className="contact-container">
-            <h1 id="contact-heading">Contact Us</h1>
-            <p>We’re here to help — reach {brand.name} anytime.</p>
+            <h1 id="contact-heading">{content("contact.h1.1")}</h1>
+            <p>
+              {content("contact.p.2")} {brand.name} {content("contact.p.3")}
+            </p>
           </div>
         </section>
         <div className="contact-container contact-grid">
@@ -70,20 +74,14 @@ export default function Contact() {
             aria-labelledby="company-heading"
           >
             <h2 id="company-heading">{brand.name}</h2>
-            <p className="contact-description">
-              Company details &amp; registered information
-            </p>
+            <p className="contact-description">{content("contact.p.4")}</p>
             <div className="contact-detail">
               <span className="contact-detail-icon">
                 <MapPin size={19} />
               </span>
               <div>
-                <h3>Address</h3>
-                <p>
-                  {isPlatform
-                    ? "Ravi Shankar Nagar Korba Chhattisgarh Pin - 495677"
-                    : "Contact your business administrator for the registered address."}
-                </p>
+                <h3>{content("contact.h3.5")}</h3>
+                <p>{website.brand.address}</p>
               </div>
             </div>
             <div className="contact-detail">
@@ -91,11 +89,11 @@ export default function Contact() {
                 <Phone size={19} />
               </span>
               <div>
-                <h3>Support Phone</h3>
+                <h3>{content("contact.h3.6")}</h3>
                 {phone ? (
                   <a href={`tel:${phone}`}>{phone}</a>
                 ) : (
-                  <p>Contact your business administrator.</p>
+                  <p>{content("contact.p.7")}</p>
                 )}
               </div>
             </div>
@@ -104,11 +102,11 @@ export default function Contact() {
                 <Mail size={19} />
               </span>
               <div>
-                <h3>Support Email</h3>
+                <h3>{content("contact.h3.8")}</h3>
                 {email ? (
                   <a href={`mailto:${email}`}>{email}</a>
                 ) : (
-                  <p>Contact your business administrator.</p>
+                  <p>{content("contact.p.9")}</p>
                 )}
               </div>
             </div>
@@ -117,13 +115,15 @@ export default function Contact() {
             className="contact-panel contact-message"
             aria-labelledby="message-heading"
           >
-            <h2 id="message-heading">Send a Message</h2>
+            <h2 id="message-heading">{content("contact.h2.10")}</h2>
             <form onSubmit={handleSubmit(openDraft)} noValidate>
               <div className="contact-field">
-                <label htmlFor="contact-name">Your Name</label>
+                <label htmlFor="contact-name">
+                  {content("contact.label.11")}
+                </label>
                 <input
                   id="contact-name"
-                  placeholder="Full Name"
+                  placeholder={content("contact.placeholder.12")}
                   autoComplete="name"
                   maxLength={100}
                   required
@@ -144,11 +144,13 @@ export default function Contact() {
                 )}
               </div>
               <div className="contact-field">
-                <label htmlFor="contact-email">Email Address</label>
+                <label htmlFor="contact-email">
+                  {content("contact.label.13")}
+                </label>
                 <input
                   id="contact-email"
                   type="email"
-                  placeholder="you@email.com"
+                  placeholder={content("contact.placeholder.14")}
                   autoComplete="email"
                   maxLength={254}
                   required
@@ -169,11 +171,13 @@ export default function Contact() {
                 )}
               </div>
               <div className="contact-field">
-                <label htmlFor="contact-message">Message</label>
+                <label htmlFor="contact-message">
+                  {content("contact.label.15")}
+                </label>
                 <textarea
                   id="contact-message"
                   rows={5}
-                  placeholder="How can we help you?"
+                  placeholder={content("contact.placeholder.16")}
                   maxLength={5000}
                   required
                   aria-invalid={Boolean(errors.message)}
@@ -195,7 +199,7 @@ export default function Contact() {
                 )}
               </div>
               <button className="contact-send" type="submit" disabled={!email}>
-                Send Message
+                {content("contact.button.17")}
               </button>
               <p id="contact-form-note" className="contact-form-note">
                 {email
@@ -204,8 +208,7 @@ export default function Contact() {
               </p>
               {draftOpened && (
                 <p className="contact-form-status" role="status">
-                  Continue in your email app to send your message. If it did not
-                  open, email {email} directly.
+                  {content("contact.p.18")} {email} {content("contact.p.19")}
                 </p>
               )}
             </form>

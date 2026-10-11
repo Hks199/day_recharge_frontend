@@ -9,13 +9,11 @@ import {
   QueryClient,
   QueryClientProvider,
   useQuery,
+  type Query,
 } from "@tanstack/react-query";
 import { api, isPlatform } from "../lib/api/client";
-import {
-  publicConfigSchema,
-  type PublicConfig,
-  type User,
-} from "../types/contracts";
+import { WebsiteContext, websiteSchema, websiteKey } from "./website";
+import { type PublicConfig, type User } from "../types/contracts";
 import { ErrorPanel, Loading } from "../components/ui";
 import { FeedbackProvider } from "../components/feedback/Feedback";
 const AuthContext = createContext<{ user: User | null; clear: () => void }>({
@@ -68,8 +66,17 @@ function Contexts({ children }: { children: ReactNode }) {
         ? `${session.user.tenantId}:${session.user.id}`
         : null;
       if (!next || next !== identity) {
-        void queryClient.cancelQueries();
-        queryClient.clear();
+        // Public website data belongs to the host, not the session. Keeping it
+        // mounted avoids interrupting login while all private data is cleared.
+        const privateQueries = {
+          predicate: (query: Query) =>
+            query.queryKey.length !== 2 ||
+            query.queryKey[0] !== window.location.host ||
+            query.queryKey[1] !== "public-website",
+        };
+        void queryClient.cancelQueries(privateQueries);
+        queryClient.removeQueries(privateQueries);
+        queryClient.getMutationCache().clear();
       }
       identity = next;
       setUser(session?.user ?? null);
@@ -83,21 +90,21 @@ function Contexts({ children }: { children: ReactNode }) {
     };
   }, []);
   const config = useQuery({
-    queryKey: [window.location.host, "public-config"],
+    queryKey: websiteKey(),
     queryFn: ({ signal }) =>
-      api.request("/public/tenant-config", publicConfigSchema, {
-        public: true,
-        signal,
-      }),
-    enabled: !isPlatform,
+      api.request(
+        isPlatform ? "/platform/public/website" : "/public/website",
+        websiteSchema,
+        {
+          public: true,
+          signal,
+        },
+      ),
   });
-  const brand: PublicConfig = isPlatform
-    ? {
-        name: import.meta.env.VITE_PLATFORM_NAME ?? "Day Recharge",
-        features: [],
-        support: {},
-      }
-    : (config.data ?? { name: "Recharge", features: [], support: {} });
+  const brand: PublicConfig = {
+    ...(config.data?.brand ?? { name: "", support: {} }),
+    features: [],
+  };
   useEffect(() => {
     document.title = brand.name;
     for (const [key, value] of [
@@ -124,9 +131,9 @@ function Contexts({ children }: { children: ReactNode }) {
   return (
     <AuthContext.Provider value={{ user, clear: () => api.clear() }}>
       <BrandContext.Provider value={brand}>
-        {!isPlatform && config.isPending ? (
+        {config.isPending ? (
           <Loading full />
-        ) : !isPlatform && config.isError ? (
+        ) : config.isError ? (
           <div className="center-page">
             <ErrorPanel
               error={config.error}
@@ -134,7 +141,9 @@ function Contexts({ children }: { children: ReactNode }) {
             />
           </div>
         ) : (
-          children
+          <WebsiteContext.Provider value={config.data}>
+            {children}
+          </WebsiteContext.Provider>
         )}
       </BrandContext.Provider>
     </AuthContext.Provider>

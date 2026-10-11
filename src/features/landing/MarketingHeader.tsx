@@ -1,17 +1,21 @@
-﻿import { useEffect, useRef, useState } from "react";
+import { useWebsite } from "../../app/website";
+import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useBrand } from "../../app/providers";
 import { Brand } from "./Brand";
 import "./marketing-header.css";
 
-const links = [
-  { to: "/", label: "Home" },
-  { to: "/aboutus", label: "About" },
-  { to: "/contactus", label: "Contact" },
-  { to: "/terms", label: "Terms" },
-];
 export default function MarketingHeader() {
+  const website = useWebsite();
+  const content = website.text;
+  const links = [
+    { to: content("navigation.to.1"), label: content("navigation.label.2") },
+    { to: content("navigation.to.3"), label: content("navigation.label.4") },
+    { to: content("navigation.to.5"), label: content("navigation.label.6") },
+    { to: content("navigation.to.7"), label: content("navigation.label.8") },
+  ];
+
   const brand = useBrand();
   const { pathname } = useLocation();
   const [menu, setMenu] = useState(false);
@@ -44,12 +48,12 @@ export default function MarketingHeader() {
   return (
     <>
       <a href="#main-content" className="lp-skip">
-        Skip to content
+        {content("navigation.a.9")}
       </a>
       <header className="lp-header marketing-header" ref={header}>
         <div className="lp-container lp-nav-inner">
           <Link
-            to="/"
+            to={content("navigation.to.10")}
             aria-label={`${brand.name} home`}
             onClick={() => setMenu(false)}
           >
@@ -76,24 +80,27 @@ export default function MarketingHeader() {
             ))}
             <Link
               className="lp-contact-mobile-login"
-              to="/login"
+              to={content("navigation.to.11")}
               onClick={() => setMenu(false)}
             >
-              Login to your account
+              {content("navigation.Link.12")}
             </Link>
             <Link
               className="lp-mobile-start"
-              to="/register"
+              to={content("navigation.to.13")}
               onClick={() => setMenu(false)}
             >
-              Get Started
+              {content("navigation.Link.14")}
             </Link>
           </nav>
-          <Link className="lp-button lp-login" to="/login">
-            Login
+          <Link className="lp-button lp-login" to={content("navigation.to.15")}>
+            {content("navigation.Link.16")}
           </Link>
-          <Link className="lp-button lp-header-start" to="/register">
-            Get Started
+          <Link
+            className="lp-button lp-header-start"
+            to={content("navigation.to.17")}
+          >
+            {content("navigation.Link.18")}
           </Link>
           <button
             ref={menuButton}

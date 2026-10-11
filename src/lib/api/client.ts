@@ -11,6 +11,7 @@ export class ApiError extends Error {
   }
 }
 const messages: Record<string, string> = {
+  WEBSITE_VERSION_CONFLICT: 'The website was changed by another administrator. Reload before saving.',
   NETWORK_ERROR:
     "The server could not be reached. Check your connection. If you submitted funds, the outcome is uncertain; retry the same intent only.",
   INVALID_CREDENTIALS: "Email or password is incorrect.",

@@ -304,9 +304,13 @@ export function SettingsPage() {
               fields={[
                 {
                   name: "logo",
-                  label: "Logo URL (HTTPS)",
+                  label: "Logo URL (HTTPS or /images/ path)",
                   optional: true,
-                  validation: z.url().startsWith("https://").or(z.literal("")),
+                  validation: z
+                    .url()
+                    .startsWith("https://")
+                    .or(z.string().regex(/^\/images\/[a-zA-Z0-9_./-]+$/))
+                    .or(z.literal("")),
                 },
                 {
                   name: "primaryColor",

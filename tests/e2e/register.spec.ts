@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { fixtures } from "./fixtures";
+import { websiteFixture } from '../fixtures/website';
 
 test("Tenant registration requires that tenant's support contact", async ({
   page,
@@ -10,13 +11,12 @@ test("Tenant registration requires that tenant's support contact", async ({
   await expect(
     page.getByRole("button", { name: "Request Account Access" }),
   ).toBeEnabled();
-  await page.route("**/api/public/tenant-config", (route) =>
+  await page.route("**/api/public/website", (route) =>
     route.fulfill({
       contentType: "application/json",
       body: JSON.stringify({
-        name: "Connected Recharge",
-        features: [],
-        support: {},
+        ...websiteFixture(false),
+        brand: { ...websiteFixture(false).brand, support: { email: '', phone: '' } },
       }),
     }),
   );

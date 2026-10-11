@@ -1,4 +1,5 @@
 import { type Page, expect } from "@playwright/test";
+import { websiteFixture } from '../fixtures/website';
 import type { Role } from "../../src/types/contracts";
 export const ids = {
   user: "aaaaaaaaaaaaaaaaaaaaaaaa",
@@ -43,7 +44,8 @@ export async function fixtures(
       if (role === 'DEVELOPER' && !path.startsWith('/api/platform/')) throw new Error(`Developer called tenant API: ${path}`);
       if (role !== 'DEVELOPER' && path.startsWith('/api/platform/')) throw new Error(`Tenant user called platform API: ${path}`);
       let body: unknown;
-      if (path.endsWith("/public/tenant-config"))
+      if (path.endsWith('/public/website') || path.endsWith('/website')) body = websiteFixture(role === 'DEVELOPER');
+      else if (path.endsWith("/public/tenant-config"))
         body = {
           name: "Connected Recharge",
           features: ["Recharge"],

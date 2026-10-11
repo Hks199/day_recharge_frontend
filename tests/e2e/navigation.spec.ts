@@ -32,7 +32,13 @@ test("Public navbar keeps its links, actions, and size when navigating to About 
           : ["Home", "About", "Contact", "Terms"],
       );
       const header = page.locator(".marketing-header");
-      const height = (await header.boundingBox())!.height;
+      let height: number | undefined;
+      await expect
+        .poll(async () => {
+          height = (await header.boundingBox())?.height;
+          return height;
+        })
+        .toBeGreaterThan(0);
       headerHeight ??= height;
       expect(height).toBe(headerHeight);
       await expect(

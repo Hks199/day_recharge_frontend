@@ -19,7 +19,8 @@ import { Guard } from "../src/app/router";
 import { api, ApiError } from "../src/lib/api/client";
 import { type Role, type Session } from "../src/types/contracts";
 import { homes } from "../src/lib/permissions";
-const server = setupServer();
+import { websiteFixture } from './fixtures/website';
+const server = setupServer(http.get('*/api/platform/public/website', () => HttpResponse.json(websiteFixture())));
 beforeAll(() => server.listen({ onUnhandledRequest: "error" }));
 afterEach(() => {
   server.resetHandlers();
@@ -174,6 +175,7 @@ describe("Permissions and cache isolation", () => {
       api.clear();
       expect(await screen.findByText("Login required")).toBeInTheDocument();
       expect(queryClient.getQueryData(["sensitive"])).toBeUndefined();
+      expect(queryClient.getQueryData([window.location.host, 'public-website'])).toBeDefined();
     },
   );
   it("rejects a forbidden direct route", async () => {

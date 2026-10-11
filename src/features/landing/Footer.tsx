@@ -1,3 +1,4 @@
+import { useWebsite } from "../../app/website";
 import { Link } from "react-router-dom";
 import { Rocket, Headphones, Mail } from "lucide-react";
 import { useBrand } from "../../app/providers";
@@ -8,40 +9,44 @@ export default function Footer({
 }: {
   registration?: boolean;
 }) {
+  const website = useWebsite();
+  const content = website.text;
+
   const brand = useBrand();
   return (
     <footer className="dr-footer">
       <div className="dr-footer-container">
         <div className="dr-footer-row">
           <div className="dr-footer-intro dr-footer-column">
-            <Link to="/" aria-label={`${brand.name} home`}>
-              <img
-                className="dr-footer-logo"
-                src="/images/day-recharge-logo.jpg"
-                alt={brand.name}
-                width="75"
-                height="48"
-              />
+            <Link to={content("footer.to.1")} aria-label={`${brand.name} home`}>
+              {brand.logo ? (
+                <img
+                  className="dr-footer-logo"
+                  src={brand.logo}
+                  alt={brand.name}
+                  width="75"
+                  height="48"
+                />
+              ) : (
+                <strong>{brand.name}</strong>
+              )}
             </Link>
-            <p>
-              A connected recharge and bill payment workspace for business
-              owners, Distributors, and Retailers.
-            </p>
+            <p>{content("footer.p.3")}</p>
           </div>
           <nav
             className="dr-footer-column dr-footer-links"
             aria-label="Footer services"
           >
-            <h3>Services</h3>
+            <h3>{content("footer.h3.4")}</h3>
             <ul>
               {[
-                "Prepaid Recharge",
-                "DTH Recharge",
-                "Electricity Bill",
-                "Bill Payments",
+                content("footer.service.5"),
+                content("footer.service.6"),
+                content("footer.service.7"),
+                content("footer.service.8"),
               ].map((service) => (
                 <li key={service}>
-                  <Link to="/login">{service}</Link>
+                  <Link to={content("footer.to.9")}>{service}</Link>
                 </li>
               ))}
             </ul>
@@ -50,36 +55,48 @@ export default function Footer({
             className="dr-footer-column dr-footer-links"
             aria-label="Footer company"
           >
-            <h3>Company</h3>
+            <h3>{content("footer.h3.10")}</h3>
             <ul>
               <li>
-                <Link to="/aboutus">About Us</Link>
+                <Link to={content("footer.to.11")}>
+                  {content("footer.Link.12")}
+                </Link>
               </li>
               <li>
-                <Link to="/contactus">Contact</Link>
+                <Link to={content("footer.to.13")}>
+                  {content("footer.Link.14")}
+                </Link>
               </li>
               <li>
-                <Link to="/terms">Terms &amp; Conditions</Link>
+                <Link to={content("footer.to.15")}>
+                  {content("footer.Link.16")}
+                </Link>
               </li>
               <li>
-                <Link to="/privacy">Privacy Policy</Link>
+                <Link to={content("footer.to.17")}>
+                  {content("footer.Link.18")}
+                </Link>
               </li>
             </ul>
           </nav>
           <div className="dr-footer-column dr-footer-start">
-            <h3>Get Started Today</h3>
-            <p>
-              Access your payments, wallet, and business network through your
-              authorized account.
-            </p>
+            <h3>{content("footer.h3.19")}</h3>
+            <p>{content("footer.p.20")}</p>
             <Link
               className="dr-footer-register"
-              to={registration ? "/register" : "/login"}
+              to={
+                registration
+                  ? content("footer.text.21")
+                  : content("footer.text.22")
+              }
             >
-              <Rocket size={13} /> {registration ? "Register Now" : "Login Now"}
+              <Rocket size={13} />{" "}
+              {registration
+                ? content("footer.text.23")
+                : content("footer.text.24")}
             </Link>
             <div className="dr-footer-support">
-              <div>Support</div>
+              <div>{content("footer.div.25")}</div>
               {brand.support.phone && (
                 <a href={`tel:${brand.support.phone}`}>
                   <Headphones size={13} />
@@ -93,7 +110,9 @@ export default function Footer({
                 </a>
               )}
               {!brand.support.phone && !brand.support.email && (
-                <Link to="/contactus">Contact your business administrator</Link>
+                <Link to={content("footer.to.26")}>
+                  {content("footer.Link.27")}
+                </Link>
               )}
             </div>
           </div>
@@ -102,12 +121,17 @@ export default function Footer({
       <div className="dr-footer-copyright">
         <div className="dr-footer-container dr-footer-bottom">
           <p>
-            © {new Date().getFullYear()} <strong>{brand.name}</strong>. All
-            Rights Reserved.
+            {content("footer.p.28")} {new Date().getFullYear()}{" "}
+            <strong>{brand.name}</strong>
+            {content("footer.p.29")}
           </p>
           <nav aria-label="Footer legal">
-            <Link to="/terms">Terms</Link>
-            <Link to="/privacy">Privacy</Link>
+            <Link to={content("footer.to.30")}>
+              {content("footer.Link.31")}
+            </Link>
+            <Link to={content("footer.to.32")}>
+              {content("footer.Link.33")}
+            </Link>
           </nav>
         </div>
       </div>

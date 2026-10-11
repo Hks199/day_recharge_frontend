@@ -1,0 +1,1334 @@
+[
+  {
+    "key": "home.title.1",
+    "group": "home",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "home.image.2",
+    "group": "home",
+    "label": "image",
+    "type": "image"
+  },
+  {
+    "key": "home.color.3",
+    "group": "home",
+    "label": "color",
+    "type": "color"
+  },
+  {
+    "key": "home.title.4",
+    "group": "home",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "home.image.5",
+    "group": "home",
+    "label": "image",
+    "type": "image"
+  },
+  {
+    "key": "home.color.6",
+    "group": "home",
+    "label": "color",
+    "type": "color"
+  },
+  {
+    "key": "home.title.7",
+    "group": "home",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "home.image.8",
+    "group": "home",
+    "label": "image",
+    "type": "image"
+  },
+  {
+    "key": "home.color.9",
+    "group": "home",
+    "label": "color",
+    "type": "color"
+  },
+  {
+    "key": "home.title.10",
+    "group": "home",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "home.image.11",
+    "group": "home",
+    "label": "image",
+    "type": "image"
+  },
+  {
+    "key": "home.color.12",
+    "group": "home",
+    "label": "color",
+    "type": "color"
+  },
+  {
+    "key": "home.title.13",
+    "group": "home",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "home.image.14",
+    "group": "home",
+    "label": "image",
+    "type": "image"
+  },
+  {
+    "key": "home.color.15",
+    "group": "home",
+    "label": "color",
+    "type": "color"
+  },
+  {
+    "key": "home.title.16",
+    "group": "home",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "home.image.17",
+    "group": "home",
+    "label": "image",
+    "type": "image"
+  },
+  {
+    "key": "home.color.18",
+    "group": "home",
+    "label": "color",
+    "type": "color"
+  },
+  {
+    "key": "home.title.19",
+    "group": "home",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "home.text.20",
+    "group": "home",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "home.color.21",
+    "group": "home",
+    "label": "color",
+    "type": "color"
+  },
+  {
+    "key": "home.title.22",
+    "group": "home",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "home.text.23",
+    "group": "home",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "home.color.24",
+    "group": "home",
+    "label": "color",
+    "type": "color"
+  },
+  {
+    "key": "home.title.25",
+    "group": "home",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "home.text.26",
+    "group": "home",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "home.color.27",
+    "group": "home",
+    "label": "color",
+    "type": "color"
+  },
+  {
+    "key": "home.title.28",
+    "group": "home",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "home.text.29",
+    "group": "home",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "home.color.30",
+    "group": "home",
+    "label": "color",
+    "type": "color"
+  },
+  {
+    "key": "home.title.31",
+    "group": "home",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "home.text.32",
+    "group": "home",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "home.color.33",
+    "group": "home",
+    "label": "color",
+    "type": "color"
+  },
+  {
+    "key": "home.title.34",
+    "group": "home",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "home.text.35",
+    "group": "home",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "home.color.36",
+    "group": "home",
+    "label": "color",
+    "type": "color"
+  },
+  {
+    "key": "home.title.37",
+    "group": "home",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "home.text.38",
+    "group": "home",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "home.highlight.39",
+    "group": "home",
+    "label": "highlight",
+    "type": "text"
+  },
+  {
+    "key": "home.caption.40",
+    "group": "home",
+    "label": "caption",
+    "type": "text"
+  },
+  {
+    "key": "home.to.41",
+    "group": "home",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "home.title.42",
+    "group": "home",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "home.text.43",
+    "group": "home",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "home.highlight.44",
+    "group": "home",
+    "label": "highlight",
+    "type": "text"
+  },
+  {
+    "key": "home.caption.45",
+    "group": "home",
+    "label": "caption",
+    "type": "text"
+  },
+  {
+    "key": "home.to.46",
+    "group": "home",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "home.title.47",
+    "group": "home",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "home.text.48",
+    "group": "home",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "home.highlight.49",
+    "group": "home",
+    "label": "highlight",
+    "type": "text"
+  },
+  {
+    "key": "home.caption.50",
+    "group": "home",
+    "label": "caption",
+    "type": "text"
+  },
+  {
+    "key": "home.to.51",
+    "group": "home",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "home.div.52",
+    "group": "home",
+    "label": "div",
+    "type": "text"
+  },
+  {
+    "key": "home.h1.53",
+    "group": "home",
+    "label": "h1",
+    "type": "text"
+  },
+  {
+    "key": "home.h1.54",
+    "group": "home",
+    "label": "h1",
+    "type": "text"
+  },
+  {
+    "key": "home.span.55",
+    "group": "home",
+    "label": "span",
+    "type": "text"
+  },
+  {
+    "key": "home.p.56",
+    "group": "home",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "home.to.57",
+    "group": "home",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "home.Link.58",
+    "group": "home",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "home.to.59",
+    "group": "home",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "home.Link.60",
+    "group": "home",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "home.to.61",
+    "group": "home",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "home.Link.62",
+    "group": "home",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "home.strong.63",
+    "group": "home",
+    "label": "strong",
+    "type": "text"
+  },
+  {
+    "key": "home.span.64",
+    "group": "home",
+    "label": "span",
+    "type": "text"
+  },
+  {
+    "key": "home.strong.65",
+    "group": "home",
+    "label": "strong",
+    "type": "text"
+  },
+  {
+    "key": "home.span.66",
+    "group": "home",
+    "label": "span",
+    "type": "text"
+  },
+  {
+    "key": "home.strong.67",
+    "group": "home",
+    "label": "strong",
+    "type": "text"
+  },
+  {
+    "key": "home.span.68",
+    "group": "home",
+    "label": "span",
+    "type": "text"
+  },
+  {
+    "key": "home.strong.69",
+    "group": "home",
+    "label": "strong",
+    "type": "text"
+  },
+  {
+    "key": "home.span.70",
+    "group": "home",
+    "label": "span",
+    "type": "text"
+  },
+  {
+    "key": "home.src.71",
+    "group": "home",
+    "label": "src",
+    "type": "image"
+  },
+  {
+    "key": "home.alt.72",
+    "group": "home",
+    "label": "alt",
+    "type": "text"
+  },
+  {
+    "key": "home.small.73",
+    "group": "home",
+    "label": "small",
+    "type": "text"
+  },
+  {
+    "key": "home.strong.74",
+    "group": "home",
+    "label": "strong",
+    "type": "text"
+  },
+  {
+    "key": "home.span.75",
+    "group": "home",
+    "label": "span",
+    "type": "text"
+  },
+  {
+    "key": "home.small.76",
+    "group": "home",
+    "label": "small",
+    "type": "text"
+  },
+  {
+    "key": "home.strong.77",
+    "group": "home",
+    "label": "strong",
+    "type": "text"
+  },
+  {
+    "key": "home.span.78",
+    "group": "home",
+    "label": "span",
+    "type": "text"
+  },
+  {
+    "key": "home.div.79",
+    "group": "home",
+    "label": "div",
+    "type": "text"
+  },
+  {
+    "key": "home.span.80",
+    "group": "home",
+    "label": "span",
+    "type": "text"
+  },
+  {
+    "key": "home.h2.81",
+    "group": "home",
+    "label": "h2",
+    "type": "text"
+  },
+  {
+    "key": "home.p.82",
+    "group": "home",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "home.to.83",
+    "group": "home",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "home.span.84",
+    "group": "home",
+    "label": "span",
+    "type": "text"
+  },
+  {
+    "key": "home.h2.85",
+    "group": "home",
+    "label": "h2",
+    "type": "text"
+  },
+  {
+    "key": "home.p.86",
+    "group": "home",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "home.to.87",
+    "group": "home",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "home.Link.88",
+    "group": "home",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "home.span.89",
+    "group": "home",
+    "label": "span",
+    "type": "text"
+  },
+  {
+    "key": "home.h2.90",
+    "group": "home",
+    "label": "h2",
+    "type": "text"
+  },
+  {
+    "key": "home.h2.91",
+    "group": "home",
+    "label": "h2",
+    "type": "text"
+  },
+  {
+    "key": "home.p.92",
+    "group": "home",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "home.to.93",
+    "group": "home",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "home.Link.94",
+    "group": "home",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "home.to.95",
+    "group": "home",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "home.Link.96",
+    "group": "home",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "about.title.1",
+    "group": "about",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "about.description.2",
+    "group": "about",
+    "label": "description",
+    "type": "text"
+  },
+  {
+    "key": "about.title.3",
+    "group": "about",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "about.description.4",
+    "group": "about",
+    "label": "description",
+    "type": "text"
+  },
+  {
+    "key": "about.title.5",
+    "group": "about",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "about.description.6",
+    "group": "about",
+    "label": "description",
+    "type": "text"
+  },
+  {
+    "key": "about.title.7",
+    "group": "about",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "about.description.8",
+    "group": "about",
+    "label": "description",
+    "type": "text"
+  },
+  {
+    "key": "about.h1.9",
+    "group": "about",
+    "label": "h1",
+    "type": "text"
+  },
+  {
+    "key": "about.p.10",
+    "group": "about",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "about.h2.11",
+    "group": "about",
+    "label": "h2",
+    "type": "text"
+  },
+  {
+    "key": "about.p.12",
+    "group": "about",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "about.p.13",
+    "group": "about",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "contact.h1.1",
+    "group": "contact",
+    "label": "h1",
+    "type": "text"
+  },
+  {
+    "key": "contact.p.2",
+    "group": "contact",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "contact.p.3",
+    "group": "contact",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "contact.p.4",
+    "group": "contact",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "contact.h3.5",
+    "group": "contact",
+    "label": "h3",
+    "type": "text"
+  },
+  {
+    "key": "contact.h3.6",
+    "group": "contact",
+    "label": "h3",
+    "type": "text"
+  },
+  {
+    "key": "contact.p.7",
+    "group": "contact",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "contact.h3.8",
+    "group": "contact",
+    "label": "h3",
+    "type": "text"
+  },
+  {
+    "key": "contact.p.9",
+    "group": "contact",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "contact.h2.10",
+    "group": "contact",
+    "label": "h2",
+    "type": "text"
+  },
+  {
+    "key": "contact.label.11",
+    "group": "contact",
+    "label": "label",
+    "type": "text"
+  },
+  {
+    "key": "contact.placeholder.12",
+    "group": "contact",
+    "label": "placeholder",
+    "type": "text"
+  },
+  {
+    "key": "contact.label.13",
+    "group": "contact",
+    "label": "label",
+    "type": "text"
+  },
+  {
+    "key": "contact.placeholder.14",
+    "group": "contact",
+    "label": "placeholder",
+    "type": "text"
+  },
+  {
+    "key": "contact.label.15",
+    "group": "contact",
+    "label": "label",
+    "type": "text"
+  },
+  {
+    "key": "contact.placeholder.16",
+    "group": "contact",
+    "label": "placeholder",
+    "type": "text"
+  },
+  {
+    "key": "contact.button.17",
+    "group": "contact",
+    "label": "button",
+    "type": "text"
+  },
+  {
+    "key": "contact.p.18",
+    "group": "contact",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "contact.p.19",
+    "group": "contact",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "terms.title.1",
+    "group": "terms",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "terms.text.2",
+    "group": "terms",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "terms.title.3",
+    "group": "terms",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "terms.text.4",
+    "group": "terms",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "terms.title.5",
+    "group": "terms",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "terms.text.6",
+    "group": "terms",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "terms.title.7",
+    "group": "terms",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "terms.text.8",
+    "group": "terms",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "terms.title.9",
+    "group": "terms",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "terms.text.10",
+    "group": "terms",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "terms.h1.11",
+    "group": "terms",
+    "label": "h1",
+    "type": "text"
+  },
+  {
+    "key": "terms.p.12",
+    "group": "terms",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "terms.dateTime.13",
+    "group": "terms",
+    "label": "dateTime",
+    "type": "date"
+  },
+  {
+    "key": "terms.time.14",
+    "group": "terms",
+    "label": "time",
+    "type": "text"
+  },
+  {
+    "key": "privacy.title.1",
+    "group": "privacy",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "privacy.text.2",
+    "group": "privacy",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "privacy.title.3",
+    "group": "privacy",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "privacy.text.4",
+    "group": "privacy",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "privacy.title.5",
+    "group": "privacy",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "privacy.text.6",
+    "group": "privacy",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "privacy.title.7",
+    "group": "privacy",
+    "label": "title",
+    "type": "text"
+  },
+  {
+    "key": "privacy.text.8",
+    "group": "privacy",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "privacy.h1.9",
+    "group": "privacy",
+    "label": "h1",
+    "type": "text"
+  },
+  {
+    "key": "privacy.p.10",
+    "group": "privacy",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "privacy.dateTime.11",
+    "group": "privacy",
+    "label": "dateTime",
+    "type": "date"
+  },
+  {
+    "key": "privacy.time.12",
+    "group": "privacy",
+    "label": "time",
+    "type": "text"
+  },
+  {
+    "key": "privacy.h2.13",
+    "group": "privacy",
+    "label": "h2",
+    "type": "text"
+  },
+  {
+    "key": "privacy.p.14",
+    "group": "privacy",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "privacy.to.15",
+    "group": "privacy",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "privacy.Link.16",
+    "group": "privacy",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "footer.to.1",
+    "group": "footer",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "footer.p.3",
+    "group": "footer",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "footer.h3.4",
+    "group": "footer",
+    "label": "h3",
+    "type": "text"
+  },
+  {
+    "key": "footer.service.5",
+    "group": "footer",
+    "label": "service",
+    "type": "text"
+  },
+  {
+    "key": "footer.service.6",
+    "group": "footer",
+    "label": "service",
+    "type": "text"
+  },
+  {
+    "key": "footer.service.7",
+    "group": "footer",
+    "label": "service",
+    "type": "text"
+  },
+  {
+    "key": "footer.service.8",
+    "group": "footer",
+    "label": "service",
+    "type": "text"
+  },
+  {
+    "key": "footer.to.9",
+    "group": "footer",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "footer.h3.10",
+    "group": "footer",
+    "label": "h3",
+    "type": "text"
+  },
+  {
+    "key": "footer.to.11",
+    "group": "footer",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "footer.Link.12",
+    "group": "footer",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "footer.to.13",
+    "group": "footer",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "footer.Link.14",
+    "group": "footer",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "footer.to.15",
+    "group": "footer",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "footer.Link.16",
+    "group": "footer",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "footer.to.17",
+    "group": "footer",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "footer.Link.18",
+    "group": "footer",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "footer.h3.19",
+    "group": "footer",
+    "label": "h3",
+    "type": "text"
+  },
+  {
+    "key": "footer.p.20",
+    "group": "footer",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "footer.text.21",
+    "group": "footer",
+    "label": "text",
+    "type": "link"
+  },
+  {
+    "key": "footer.text.22",
+    "group": "footer",
+    "label": "text",
+    "type": "link"
+  },
+  {
+    "key": "footer.text.23",
+    "group": "footer",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "footer.text.24",
+    "group": "footer",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "footer.div.25",
+    "group": "footer",
+    "label": "div",
+    "type": "text"
+  },
+  {
+    "key": "footer.to.26",
+    "group": "footer",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "footer.Link.27",
+    "group": "footer",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "footer.p.28",
+    "group": "footer",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "footer.p.29",
+    "group": "footer",
+    "label": "p",
+    "type": "text"
+  },
+  {
+    "key": "footer.to.30",
+    "group": "footer",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "footer.Link.31",
+    "group": "footer",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "footer.to.32",
+    "group": "footer",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "footer.Link.33",
+    "group": "footer",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "navigation.to.1",
+    "group": "navigation",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "navigation.label.2",
+    "group": "navigation",
+    "label": "label",
+    "type": "text"
+  },
+  {
+    "key": "navigation.to.3",
+    "group": "navigation",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "navigation.label.4",
+    "group": "navigation",
+    "label": "label",
+    "type": "text"
+  },
+  {
+    "key": "navigation.to.5",
+    "group": "navigation",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "navigation.label.6",
+    "group": "navigation",
+    "label": "label",
+    "type": "text"
+  },
+  {
+    "key": "navigation.to.7",
+    "group": "navigation",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "navigation.label.8",
+    "group": "navigation",
+    "label": "label",
+    "type": "text"
+  },
+  {
+    "key": "navigation.a.9",
+    "group": "navigation",
+    "label": "a",
+    "type": "text"
+  },
+  {
+    "key": "navigation.to.10",
+    "group": "navigation",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "navigation.to.11",
+    "group": "navigation",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "navigation.Link.12",
+    "group": "navigation",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "navigation.to.13",
+    "group": "navigation",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "navigation.Link.14",
+    "group": "navigation",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "navigation.to.15",
+    "group": "navigation",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "navigation.Link.16",
+    "group": "navigation",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "navigation.to.17",
+    "group": "navigation",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "navigation.Link.18",
+    "group": "navigation",
+    "label": "Link",
+    "type": "text"
+  },
+  {
+    "key": "auth.to.1",
+    "group": "auth",
+    "label": "to",
+    "type": "link"
+  },
+  {
+    "key": "auth.text.2",
+    "group": "auth",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "auth.text.3",
+    "group": "auth",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "auth.text.4",
+    "group": "auth",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "auth.text.5",
+    "group": "auth",
+    "label": "text",
+    "type": "text"
+  },
+  {
+    "key": "auth.li.6",
+    "group": "auth",
+    "label": "li",
+    "type": "text"
+  },
+  {
+    "key": "auth.li.7",
+    "group": "auth",
+    "label": "li",
+    "type": "text"
+  },
+  {
+    "key": "auth.li.8",
+    "group": "auth",
+    "label": "li",
+    "type": "text"
+  },
+  {
+    "key": "auth.li.9",
+    "group": "auth",
+    "label": "li",
+    "type": "text"
+  },
+  {
+    "key": "auth.small.10",
+    "group": "auth",
+    "label": "small",
+    "type": "text"
+  },
+  {
+    "key": "auth.strong.11",
+    "group": "auth",
+    "label": "strong",
+    "type": "text"
+  },
+  {
+    "key": "auth.span.12",
+    "group": "auth",
+    "label": "span",
+    "type": "text"
+  },
+  {
+    "key": "home.roleJoin",
+    "group": "home",
+    "label": "Join button label",
+    "type": "text"
+  },
+  {
+    "key": "home.roleContact",
+    "group": "home",
+    "label": "Contact button label",
+    "type": "text"
+  }
+]

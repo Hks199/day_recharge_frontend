@@ -1,30 +1,28 @@
 import { Zap } from "lucide-react";
 import { useBrand } from "../../app/providers";
+import { useWebsite } from "../../app/website";
 export function Brand({ inverse = false }: { inverse?: boolean }) {
   const brand = useBrand();
+  const website = useWebsite();
   return (
     <span className={`brand ${inverse ? "brand-inverse" : ""}`}>
-      {!brand.logo &&
-      brand.name.replace(/\s/g, "").toLowerCase() === "dayrecharge" ? (
+      {brand.logo ? (
         <img
           className="brand-local-logo"
-          src="/images/day-recharge-logo.jpg"
+          src={brand.logo}
           alt={brand.name}
           width="75"
           height="48"
         />
-      ) : brand.logo && /^https:\/\//.test(brand.logo) ? (
-        <img src={brand.logo} alt="" />
       ) : (
         <span className="brand-mark">
           <Zap size={23} fill="currentColor" />
         </span>
       )}
-      {(brand.logo ||
-        brand.name.replace(/\s/g, "").toLowerCase() !== "dayrecharge") && (
+      {!brand.logo && (
         <span>
           {brand.name}
-          <small>RECHARGE. CONNECT. GROW.</small>
+          <small>{website.brand.tagline}</small>
         </span>
       )}
     </span>

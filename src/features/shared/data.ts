@@ -60,9 +60,9 @@ export function useCommand() {
         q.queryKey[0] === window.location.host &&
         q.queryKey[2] === api.getSession()?.user.id,
     });
-    if (path.startsWith("/tenant"))
+    if (path.startsWith("/tenant") || path === "/platform/settings")
       await client.invalidateQueries({
-        queryKey: [window.location.host, "public-config"],
+        queryKey: [window.location.host, "public-website"],
       });
     if (method !== "GET" && !key)
       notify(

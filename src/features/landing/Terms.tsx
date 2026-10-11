@@ -1,3 +1,4 @@
+import { useWebsite } from "../../app/website";
 import { useEffect } from "react";
 import { useBrand } from "../../app/providers";
 import MarketingHeader from "./MarketingHeader";
@@ -7,6 +8,9 @@ import "./reference-theme.css";
 import "./terms.css";
 
 export default function Terms() {
+  const website = useWebsite();
+  const content = website.text;
+
   const brand = useBrand();
   useEffect(() => {
     const previous = document.title;
@@ -17,24 +21,24 @@ export default function Terms() {
   }, [brand.name]);
   const sections = [
     {
-      title: "Acceptance of Terms",
-      text: `Access to ${brand.name} means you accept the conditions described here.`,
+      title: content("terms.title.1"),
+      text: content("terms.text.2"),
     },
     {
-      title: "Services",
-      text: "Authorized business accounts can use the platform for mobile top-ups, bill settlements, and supported wallet transfers.",
+      title: content("terms.title.3"),
+      text: content("terms.text.4"),
     },
     {
-      title: "Account Responsibilities",
-      text: "Keep your sign-in details private. As the account holder, you are accountable for activity carried out using your account.",
+      title: content("terms.title.5"),
+      text: content("terms.text.6"),
     },
     {
-      title: "Wallet & Transactions",
-      text: "Wallet deposits are generally not refundable, except where a specific exception is stated. Completed payments cannot be undone.",
+      title: content("terms.title.7"),
+      text: content("terms.text.8"),
     },
     {
-      title: "Limitation of Liability",
-      text: `${brand.name} accepts no responsibility for indirect losses, incidental expenses, or consequential damage resulting from use of the platform.`,
+      title: content("terms.title.9"),
+      text: content("terms.text.10"),
     },
   ];
   return (
@@ -42,9 +46,12 @@ export default function Terms() {
       <MarketingHeader />
       <main id="main-content" className="terms-main">
         <section className="terms-banner" aria-labelledby="terms-heading">
-          <h1 id="terms-heading">Terms &amp; Conditions</h1>
+          <h1 id="terms-heading">{content("terms.h1.11")}</h1>
           <p>
-            Last updated: <time dateTime="2026-10-10">10 Oct 2026</time>
+            {content("terms.p.12")}{" "}
+            <time dateTime={content("terms.dateTime.13")}>
+              {content("terms.time.14")}
+            </time>
           </p>
         </section>
         <div className="terms-container">

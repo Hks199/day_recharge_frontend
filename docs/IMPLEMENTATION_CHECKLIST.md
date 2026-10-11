@@ -12,6 +12,6 @@ Backend inspected: README, GUIDE, API_SPEC, RBAC, TENANT_RESOLUTION, WALLET_AND_
 | 6     | platform dashboard/tenants/plans/subscriptions/providers/operators/settings/audit-logs and explicit-ID funding decision | Implemented     |
 | 7     | notifications/read, automated verification, responsive screenshots, documentation                                       | Implemented     |
 
-No backend business logic was changed. No production records were created for verification.
+The public website update adds backend website-content storage and scoped editing APIs. No financial business logic was changed and no production records were created for verification.
 
-All seven phases are implemented. Shared type checking/lint and 49 unit/component checks pass. Seventeen browser flows pass; all 17 also passed against the final production preview, as recorded in VERIFICATION.md. Integration gaps are documented in BACKEND_GAPS.md. No backend business logic or production data was changed.
+All seven phases are implemented. The subsequent public website update adds backend-owned content, per-website MongoDB documents, owner editing, version conflicts, and dynamic shared branding. Historical verification and current results are recorded in VERIFICATION.md. Integration gaps are documented in BACKEND_GAPS.md. Financial business logic and production data remain unchanged.

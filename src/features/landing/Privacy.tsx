@@ -1,3 +1,4 @@
+import { useWebsite } from "../../app/website";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useBrand } from "../../app/providers";
@@ -7,26 +8,28 @@ import "./landing.css";
 import "./reference-theme.css";
 import "./terms.css";
 
-const sections = [
-  {
-    title: "Information We Collect",
-    text: "We need your name, email, mobile number, and payment records to deliver our services.",
-  },
-  {
-    title: "How We Use Information",
-    text: "Account details support payment processing, customer assistance, and platform improvements. Personal information is not offered for sale to other businesses.",
-  },
-  {
-    title: "Data Security",
-    text: "Password hashing, protected session credentials, and role-based permissions help safeguard account information.",
-  },
-  {
-    title: "Cookies",
-    text: "A protected cookie supports authentication; this frontend adds no marketing cookies.",
-  },
-];
-
 export default function Privacy() {
+  const website = useWebsite();
+  const content = website.text;
+  const sections = [
+    {
+      title: content("privacy.title.1"),
+      text: content("privacy.text.2"),
+    },
+    {
+      title: content("privacy.title.3"),
+      text: content("privacy.text.4"),
+    },
+    {
+      title: content("privacy.title.5"),
+      text: content("privacy.text.6"),
+    },
+    {
+      title: content("privacy.title.7"),
+      text: content("privacy.text.8"),
+    },
+  ];
+
   const brand = useBrand();
   useEffect(() => {
     const previous = document.title;
@@ -40,9 +43,12 @@ export default function Privacy() {
       <MarketingHeader />
       <main id="main-content" className="terms-main">
         <section className="terms-banner" aria-labelledby="privacy-heading">
-          <h1 id="privacy-heading">Privacy Policy</h1>
+          <h1 id="privacy-heading">{content("privacy.h1.9")}</h1>
           <p>
-            Last updated: <time dateTime="2026-10-10">10 Oct 2026</time>
+            {content("privacy.p.10")}{" "}
+            <time dateTime={content("privacy.dateTime.11")}>
+              {content("privacy.time.12")}
+            </time>
           </p>
         </section>
         <div className="terms-container">
@@ -63,10 +69,13 @@ export default function Privacy() {
               className="terms-section"
               aria-labelledby="privacy-section-5"
             >
-              <h2 id="privacy-section-5">5. Contact</h2>
+              <h2 id="privacy-section-5">{content("privacy.h2.13")}</h2>
               <p>
-                Questions about personal information can be raised through our{" "}
-                <Link to="/contactus">Contact page</Link>.
+                {content("privacy.p.14")}{" "}
+                <Link to={content("privacy.to.15")}>
+                  {content("privacy.Link.16")}
+                </Link>
+                .
               </p>
             </section>
           </article>

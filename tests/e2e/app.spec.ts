@@ -322,7 +322,7 @@ test("Unknown, suspended, subscription, and origin errors fail closed", async ({
     ["SUBSCRIPTION_INACTIVE", /subscription is inactive/],
     ["ORIGIN_NOT_ALLOWED", /origin is not allowed/],
   ] as const) {
-    await page.route("**/api/public/tenant-config", (r) =>
+    await page.route("**/api/public/website", (r) =>
       r.fulfill({
         status: 403,
         contentType: "application/json",
@@ -334,6 +334,6 @@ test("Unknown, suspended, subscription, and origin errors fail closed", async ({
     await expect(
       page.getByRole("heading", { name: /Power everyday/ }),
     ).toHaveCount(0);
-    await page.unroute("**/api/public/tenant-config");
+    await page.unroute("**/api/public/website");
   }
 });
