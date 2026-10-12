@@ -11,7 +11,8 @@ export class ApiError extends Error {
   }
 }
 const messages: Record<string, string> = {
-  WEBSITE_VERSION_CONFLICT: 'The website was changed by another administrator. Reload before saving.',
+  WEBSITE_VERSION_CONFLICT:
+    "The website was changed by another administrator. Reload before saving.",
   NETWORK_ERROR:
     "The server could not be reached. Check your connection. If you submitted funds, the outcome is uncertain; retry the same intent only.",
   INVALID_CREDENTIALS: "Email or password is incorrect.",
@@ -25,6 +26,10 @@ const messages: Record<string, string> = {
     "This business subscription is inactive. Contact your business owner.",
   ORIGIN_NOT_ALLOWED:
     "This deployment origin is not allowed by the API. Contact your administrator.",
+  IMAGE_STORAGE_NOT_CONFIGURED:
+    "Image uploads are not configured. Set S3_REGION, S3_BUCKET, and S3_PUBLIC_BASE_URL in the backend environment.",
+  IMAGE_STORAGE_UNAVAILABLE:
+    "Image storage is unavailable. Check the backend AWS credentials and S3 settings.",
   INVALID_ORIGIN: "This deployment origin is invalid.",
   UNKNOWN_PLATFORM_HOST: "The API does not recognize this platform hostname.",
   INSUFFICIENT_BALANCE:
@@ -215,7 +220,9 @@ export class ApiClient {
           identity !== `${this.session.user.tenantId}:${this.session.user.id}`)
       )
         throw new ApiError(401, "AUTH_REQUIRED");
-      const authPath = ['login', 'refresh', 'logout'].some(action => path === `${this.prefix}/${action}`);
+      const authPath = ["login", "refresh", "logout"].some(
+        (action) => path === `${this.prefix}/${action}`,
+      );
       if (
         e instanceof ApiError &&
         e.status === 401 &&

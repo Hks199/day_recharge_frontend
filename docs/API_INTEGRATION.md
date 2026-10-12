@@ -1,6 +1,6 @@
 # API integration
 
-`VITE_API_BASE_URL` includes `/api` (default `/api`). Client paths omit that prefix. All requests use one `ApiClient` with credentials included, a 25-second timeout, runtime Zod validation at read boundaries, and normalized infrastructure errors. No request supplies Host, Origin, or tenant IDs as authority. Tenant IDs appear only where an explicit platform contract requires them.
+`VITE_API_BASE_URL` includes `/api` (default `/api`). Client paths omit that prefix. API requests use one `ApiClient` with credentials included, a 25-second timeout, runtime Zod validation at read boundaries, and normalized infrastructure errors. S3 image bytes are sent separately using the authorized POST fields, with credentials omitted and a 120-second timeout. No request supplies Host, Origin, or tenant IDs as authority. Tenant IDs appear only where an explicit platform contract requires them.
 
 ## Authentication
 
@@ -12,10 +12,13 @@ Private query keys include deployment host, authenticated tenant ID, and user ID
 
 ## Page mapping
 
+Website editor field definitions come from the owner GET endpoint and include a stable key plus a readable label, section, description, and optional example. The UI uses these definitions for grouping, search, accessible labels, and readable validation errors; only `{ revision, brand, values }` is sent when publishing. The backend formats visible Terms/Privacy dates from their effective-date inputs. Platform and tenant editors retain their separate endpoints and authenticated cache scopes.
+
 | UI                                  | Endpoint paths relative to API base                                                                                                                     |
 | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Public website and branding          | GET `/platform/public/website` or `/public/website`, selected by host |
 | Public website editor                | GET/PATCH `/platform/website` (DEVELOPER) or `/tenant/website` (SUPER_ADMIN), with revision checks |
+| Website image upload authorization | POST `/platform/website/images/upload` or `/tenant/website/images/upload`; returns S3 POST fields and permanent image URL |
 | Shared login/profile/security/reset | `/auth/*` or `/platform/auth/*` matching deployment                                                                                                     |
 | Tenant dashboard                    | GET `/reports/dashboard`, GET `/wallet`, GET `/recharges`                                                                                               |
 | Developer dashboard                 | GET `/platform/dashboard` only; never tenant wallet/notifications                                                                                       |

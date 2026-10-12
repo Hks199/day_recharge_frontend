@@ -1,6 +1,6 @@
 # Day Recharge frontend
 
-React, strict TypeScript, Vite, Tailwind CSS, React Router, TanStack Query, React Hook Form/Zod, Lucide, Recharts, and Radix dialogs. Implements the backend contracts in `../day_recharge_backend` without modifying that repository.
+React, strict TypeScript, Vite, Tailwind CSS, React Router, TanStack Query, React Hook Form/Zod, Lucide, Recharts, and Radix dialogs. Integrates with `../day_recharge_backend`, including backend-managed website content and S3 image upload authorization.
 
 ```powershell
 npm ci
@@ -9,6 +9,8 @@ npm run dev
 ```
 
 Open `http://localhost:5179` for the **platform**. The backend must accept `localhost` in `PLATFORM_HOSTS` and `http://localhost:5179` in `PLATFORM_ORIGINS`. Start the backend separately on port 3000. The frontend never connects to MongoDB.
+
+The **Public website** editor uses one logo across the site and offers S3 uploads for the logo and home-page images. Set `S3_REGION`, `S3_BUCKET`, and `S3_PUBLIC_BASE_URL` in the backend environment, configure backend AWS credentials and bucket CORS, and restart the backend. Full instructions are in `../day_recharge_backend/docs/WEBSITE_IMAGES.md`. The editor uploads images before saving; **Save website** publishes their URLs. AWS credentials are never configured in the frontend.
 
 Tenant access requires an actual DNS-verified domain in the backend and an active tenant/subscription. Map that verified hostname to your local frontend when developing, and configure Vite `server.allowedHosts` for that exact controlled hostname. Unknown domains deliberately fail closed. The browser supplies Origin; the frontend does not spoof it. See [deployment](docs/DEPLOYMENT.md).
 

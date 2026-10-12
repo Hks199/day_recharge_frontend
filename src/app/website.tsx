@@ -3,7 +3,6 @@ import { z } from "zod";
 export const websiteBrandSchema = z.object({
   name: z.string(),
   logo: z.string(),
-  authLogo: z.string(),
   tagline: z.string(),
   primaryColor: z.string(),
   secondaryColor: z.string(),
@@ -21,6 +20,9 @@ export const websiteEditorSchema = websiteSchema.extend({
       key: z.string(),
       group: z.string(),
       label: z.string(),
+      section: z.string(),
+      description: z.string(),
+      placeholder: z.string().optional(),
       type: z.enum(["text", "link", "image", "color", "date"]),
     }),
   ),

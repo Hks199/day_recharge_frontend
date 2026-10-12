@@ -22,8 +22,8 @@ export default function AuthStory({
           aria-label={`${brand.name} home`}
           className="login-brand"
         >
-          {website.brand.authLogo || brand.logo ? (
-            <img src={website.brand.authLogo || brand.logo} alt={brand.name} />
+          {brand.logo ? (
+            <img src={brand.logo} alt={brand.name} />
           ) : (
             <Brand inverse />
           )}

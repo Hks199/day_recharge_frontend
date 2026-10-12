@@ -1,1334 +1,1929 @@
 [
   {
-    "key": "home.title.1",
-    "group": "home",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "home.image.2",
-    "group": "home",
-    "label": "image",
-    "type": "image"
-  },
-  {
-    "key": "home.color.3",
-    "group": "home",
-    "label": "color",
-    "type": "color"
-  },
-  {
-    "key": "home.title.4",
-    "group": "home",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "home.image.5",
-    "group": "home",
-    "label": "image",
-    "type": "image"
-  },
-  {
-    "key": "home.color.6",
-    "group": "home",
-    "label": "color",
-    "type": "color"
-  },
-  {
-    "key": "home.title.7",
-    "group": "home",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "home.image.8",
-    "group": "home",
-    "label": "image",
-    "type": "image"
-  },
-  {
-    "key": "home.color.9",
-    "group": "home",
-    "label": "color",
-    "type": "color"
-  },
-  {
-    "key": "home.title.10",
-    "group": "home",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "home.image.11",
-    "group": "home",
-    "label": "image",
-    "type": "image"
-  },
-  {
-    "key": "home.color.12",
-    "group": "home",
-    "label": "color",
-    "type": "color"
-  },
-  {
-    "key": "home.title.13",
-    "group": "home",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "home.image.14",
-    "group": "home",
-    "label": "image",
-    "type": "image"
-  },
-  {
-    "key": "home.color.15",
-    "group": "home",
-    "label": "color",
-    "type": "color"
-  },
-  {
-    "key": "home.title.16",
-    "group": "home",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "home.image.17",
-    "group": "home",
-    "label": "image",
-    "type": "image"
-  },
-  {
-    "key": "home.color.18",
-    "group": "home",
-    "label": "color",
-    "type": "color"
-  },
-  {
-    "key": "home.title.19",
-    "group": "home",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "home.text.20",
-    "group": "home",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "home.color.21",
-    "group": "home",
-    "label": "color",
-    "type": "color"
-  },
-  {
-    "key": "home.title.22",
-    "group": "home",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "home.text.23",
-    "group": "home",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "home.color.24",
-    "group": "home",
-    "label": "color",
-    "type": "color"
-  },
-  {
-    "key": "home.title.25",
-    "group": "home",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "home.text.26",
-    "group": "home",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "home.color.27",
-    "group": "home",
-    "label": "color",
-    "type": "color"
-  },
-  {
-    "key": "home.title.28",
-    "group": "home",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "home.text.29",
-    "group": "home",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "home.color.30",
-    "group": "home",
-    "label": "color",
-    "type": "color"
-  },
-  {
-    "key": "home.title.31",
-    "group": "home",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "home.text.32",
-    "group": "home",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "home.color.33",
-    "group": "home",
-    "label": "color",
-    "type": "color"
-  },
-  {
-    "key": "home.title.34",
-    "group": "home",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "home.text.35",
-    "group": "home",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "home.color.36",
-    "group": "home",
-    "label": "color",
-    "type": "color"
-  },
-  {
-    "key": "home.title.37",
-    "group": "home",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "home.text.38",
-    "group": "home",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "home.highlight.39",
-    "group": "home",
-    "label": "highlight",
-    "type": "text"
-  },
-  {
-    "key": "home.caption.40",
-    "group": "home",
-    "label": "caption",
-    "type": "text"
-  },
-  {
-    "key": "home.to.41",
-    "group": "home",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "home.title.42",
-    "group": "home",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "home.text.43",
-    "group": "home",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "home.highlight.44",
-    "group": "home",
-    "label": "highlight",
-    "type": "text"
-  },
-  {
-    "key": "home.caption.45",
-    "group": "home",
-    "label": "caption",
-    "type": "text"
-  },
-  {
-    "key": "home.to.46",
-    "group": "home",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "home.title.47",
-    "group": "home",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "home.text.48",
-    "group": "home",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "home.highlight.49",
-    "group": "home",
-    "label": "highlight",
-    "type": "text"
-  },
-  {
-    "key": "home.caption.50",
-    "group": "home",
-    "label": "caption",
-    "type": "text"
-  },
-  {
-    "key": "home.to.51",
-    "group": "home",
-    "label": "to",
-    "type": "link"
-  },
-  {
     "key": "home.div.52",
     "group": "home",
-    "label": "div",
-    "type": "text"
+    "label": "Introductory badge",
+    "type": "text",
+    "section": "Welcome banner",
+    "description": "A short phrase above the main headline.",
+    "placeholder": "Your B2B Recharge & Payment Platform"
   },
   {
     "key": "home.h1.53",
     "group": "home",
-    "label": "h1",
-    "type": "text"
+    "label": "Main headline",
+    "type": "text",
+    "section": "Welcome banner",
+    "description": "The first line visitors read on the home page.",
+    "placeholder": "Power Your Business"
   },
   {
     "key": "home.h1.54",
     "group": "home",
-    "label": "h1",
-    "type": "text"
+    "label": "Headline second line",
+    "type": "text",
+    "section": "Welcome banner",
+    "description": "Text before the highlighted phrase, for example “With”.",
+    "placeholder": "With"
   },
   {
     "key": "home.span.55",
     "group": "home",
-    "label": "span",
-    "type": "text"
+    "label": "Highlighted headline",
+    "type": "text",
+    "section": "Welcome banner",
+    "description": "The emphasized phrase at the end of the headline.",
+    "placeholder": "Digital Services"
   },
   {
     "key": "home.p.56",
     "group": "home",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "home.to.57",
-    "group": "home",
-    "label": "to",
-    "type": "link"
+    "label": "Welcome description",
+    "type": "text",
+    "section": "Welcome banner",
+    "description": "Explain what your business offers in one or two sentences.",
+    "placeholder": "Mobile recharge, bill payments, and wallet management — all in one connected dashboard. Built for retailers, distributors, and business owners."
   },
   {
     "key": "home.Link.58",
     "group": "home",
-    "label": "Link",
-    "type": "text"
+    "label": "Primary button text",
+    "type": "text",
+    "section": "Welcome banner",
+    "description": "Shown in the welcome banner section.",
+    "placeholder": "Get Started Now"
   },
   {
-    "key": "home.to.59",
+    "key": "home.to.57",
     "group": "home",
-    "label": "to",
-    "type": "link"
+    "label": "Primary button destination",
+    "type": "link",
+    "section": "Welcome banner",
+    "description": "Shown in the welcome banner section. Choose the page visitors should open when they click this link or button."
   },
   {
     "key": "home.Link.60",
     "group": "home",
-    "label": "Link",
-    "type": "text"
+    "label": "Login button text",
+    "type": "text",
+    "section": "Welcome banner",
+    "description": "Shown in the welcome banner section.",
+    "placeholder": "Login to Dashboard"
   },
   {
-    "key": "home.to.61",
+    "key": "home.to.59",
     "group": "home",
-    "label": "to",
-    "type": "link"
+    "label": "Login button destination",
+    "type": "link",
+    "section": "Welcome banner",
+    "description": "Shown in the welcome banner section. Choose the page visitors should open when they click this link or button."
   },
   {
     "key": "home.Link.62",
     "group": "home",
-    "label": "Link",
-    "type": "text"
+    "label": "Support link text",
+    "type": "text",
+    "section": "Welcome banner",
+    "description": "Shown in the welcome banner section.",
+    "placeholder": "Contact Support"
   },
   {
-    "key": "home.strong.63",
+    "key": "home.to.61",
     "group": "home",
-    "label": "strong",
-    "type": "text"
-  },
-  {
-    "key": "home.span.64",
-    "group": "home",
-    "label": "span",
-    "type": "text"
-  },
-  {
-    "key": "home.strong.65",
-    "group": "home",
-    "label": "strong",
-    "type": "text"
-  },
-  {
-    "key": "home.span.66",
-    "group": "home",
-    "label": "span",
-    "type": "text"
-  },
-  {
-    "key": "home.strong.67",
-    "group": "home",
-    "label": "strong",
-    "type": "text"
-  },
-  {
-    "key": "home.span.68",
-    "group": "home",
-    "label": "span",
-    "type": "text"
-  },
-  {
-    "key": "home.strong.69",
-    "group": "home",
-    "label": "strong",
-    "type": "text"
-  },
-  {
-    "key": "home.span.70",
-    "group": "home",
-    "label": "span",
-    "type": "text"
+    "label": "Support link destination",
+    "type": "link",
+    "section": "Welcome banner",
+    "description": "Shown in the welcome banner section. Choose the page visitors should open when they click this link or button."
   },
   {
     "key": "home.src.71",
     "group": "home",
-    "label": "src",
-    "type": "image"
+    "label": "Welcome banner image",
+    "type": "image",
+    "section": "Welcome banner",
+    "description": "Choose the main illustration beside your welcome headline."
   },
   {
     "key": "home.alt.72",
     "group": "home",
-    "label": "alt",
-    "type": "text"
+    "label": "Welcome image description",
+    "type": "text",
+    "section": "Welcome banner",
+    "description": "Describe the image for visitors using screen readers.",
+    "placeholder": "Team working together with digital tools"
+  },
+  {
+    "key": "home.strong.63",
+    "group": "home",
+    "label": "Recharge highlight heading",
+    "type": "text",
+    "section": "Welcome highlights",
+    "description": "Shown in the welcome highlights section.",
+    "placeholder": "Recharge"
+  },
+  {
+    "key": "home.span.64",
+    "group": "home",
+    "label": "Recharge highlight description",
+    "type": "text",
+    "section": "Welcome highlights",
+    "description": "Shown in the welcome highlights section.",
+    "placeholder": "Everyday Services"
+  },
+  {
+    "key": "home.strong.65",
+    "group": "home",
+    "label": "Wallet highlight heading",
+    "type": "text",
+    "section": "Welcome highlights",
+    "description": "Shown in the welcome highlights section.",
+    "placeholder": "Wallet"
+  },
+  {
+    "key": "home.span.66",
+    "group": "home",
+    "label": "Wallet highlight description",
+    "type": "text",
+    "section": "Welcome highlights",
+    "description": "Shown in the welcome highlights section.",
+    "placeholder": "Clear Records"
+  },
+  {
+    "key": "home.strong.67",
+    "group": "home",
+    "label": "Reports highlight heading",
+    "type": "text",
+    "section": "Welcome highlights",
+    "description": "Shown in the welcome highlights section.",
+    "placeholder": "Reports"
+  },
+  {
+    "key": "home.span.68",
+    "group": "home",
+    "label": "Reports highlight description",
+    "type": "text",
+    "section": "Welcome highlights",
+    "description": "Shown in the welcome highlights section.",
+    "placeholder": "Track Activity"
+  },
+  {
+    "key": "home.strong.69",
+    "group": "home",
+    "label": "Teams highlight heading",
+    "type": "text",
+    "section": "Welcome highlights",
+    "description": "Shown in the welcome highlights section.",
+    "placeholder": "Teams"
+  },
+  {
+    "key": "home.span.70",
+    "group": "home",
+    "label": "Teams highlight description",
+    "type": "text",
+    "section": "Welcome highlights",
+    "description": "Shown in the welcome highlights section.",
+    "placeholder": "Role-Based Access"
   },
   {
     "key": "home.small.73",
     "group": "home",
-    "label": "small",
-    "type": "text"
+    "label": "Payments badge top label",
+    "type": "text",
+    "section": "Illustration badges",
+    "description": "Shown in the illustration badges section.",
+    "placeholder": "PAYMENT WORKFLOW"
   },
   {
     "key": "home.strong.74",
     "group": "home",
-    "label": "strong",
-    "type": "text"
+    "label": "Payments badge heading",
+    "type": "text",
+    "section": "Illustration badges",
+    "description": "Shown in the illustration badges section.",
+    "placeholder": "Recharge & Bills"
   },
   {
     "key": "home.span.75",
     "group": "home",
-    "label": "span",
-    "type": "text"
+    "label": "Payments badge description",
+    "type": "text",
+    "section": "Illustration badges",
+    "description": "Shown in the illustration badges section.",
+    "placeholder": "Submit, review, and track"
   },
   {
     "key": "home.small.76",
     "group": "home",
-    "label": "small",
-    "type": "text"
+    "label": "Wallet badge top label",
+    "type": "text",
+    "section": "Illustration badges",
+    "description": "Shown in the illustration badges section.",
+    "placeholder": "YOUR DAILY WORKSPACE"
   },
   {
     "key": "home.strong.77",
     "group": "home",
-    "label": "strong",
-    "type": "text"
+    "label": "Wallet badge heading",
+    "type": "text",
+    "section": "Illustration badges",
+    "description": "Shown in the illustration badges section.",
+    "placeholder": "Wallet Control"
   },
   {
     "key": "home.span.78",
     "group": "home",
-    "label": "span",
-    "type": "text"
+    "label": "Wallet badge description",
+    "type": "text",
+    "section": "Illustration badges",
+    "description": "Shown in the illustration badges section.",
+    "placeholder": "Balance, funding & history"
   },
   {
     "key": "home.div.79",
     "group": "home",
-    "label": "div",
-    "type": "text"
+    "label": "Access badge text",
+    "type": "text",
+    "section": "Illustration badges",
+    "description": "Shown in the illustration badges section.",
+    "placeholder": "Role-based access"
   },
   {
     "key": "home.span.80",
     "group": "home",
-    "label": "span",
-    "type": "text"
+    "label": "Services section badge",
+    "type": "text",
+    "section": "Services introduction",
+    "description": "Shown in the services introduction section.",
+    "placeholder": "Our Services"
   },
   {
     "key": "home.h2.81",
     "group": "home",
-    "label": "h2",
-    "type": "text"
+    "label": "Services section heading",
+    "type": "text",
+    "section": "Services introduction",
+    "description": "Shown in the services introduction section.",
+    "placeholder": "Everything You Need in One Place"
   },
   {
     "key": "home.p.82",
     "group": "home",
-    "label": "p",
-    "type": "text"
+    "label": "Services section description",
+    "type": "text",
+    "section": "Services introduction",
+    "description": "Shown in the services introduction section.",
+    "placeholder": "One workspace for recharges, supported bill payments, and your wallet."
   },
   {
     "key": "home.to.83",
     "group": "home",
-    "label": "to",
-    "type": "link"
+    "label": "Service cards destination",
+    "type": "link",
+    "section": "Services introduction",
+    "description": "All service cards open this page when clicked. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "home.title.1",
+    "group": "home",
+    "label": "Prepaid recharge card title",
+    "type": "text",
+    "section": "Prepaid recharge service card",
+    "description": "A short service name displayed below its image.",
+    "placeholder": "Prepaid Recharge"
+  },
+  {
+    "key": "home.image.2",
+    "group": "home",
+    "label": "Prepaid recharge image",
+    "type": "image",
+    "section": "Prepaid recharge service card",
+    "description": "Upload an illustration or icon for this service."
+  },
+  {
+    "key": "home.color.3",
+    "group": "home",
+    "label": "Prepaid recharge background color",
+    "type": "color",
+    "section": "Prepaid recharge service card",
+    "description": "The background behind this service image. Choose a color using the color picker."
+  },
+  {
+    "key": "home.title.4",
+    "group": "home",
+    "label": "Postpaid bill card title",
+    "type": "text",
+    "section": "Postpaid bill service card",
+    "description": "A short service name displayed below its image.",
+    "placeholder": "Postpaid Bill"
+  },
+  {
+    "key": "home.image.5",
+    "group": "home",
+    "label": "Postpaid bill image",
+    "type": "image",
+    "section": "Postpaid bill service card",
+    "description": "Upload an illustration or icon for this service."
+  },
+  {
+    "key": "home.color.6",
+    "group": "home",
+    "label": "Postpaid bill background color",
+    "type": "color",
+    "section": "Postpaid bill service card",
+    "description": "The background behind this service image. Choose a color using the color picker."
+  },
+  {
+    "key": "home.title.7",
+    "group": "home",
+    "label": "DTH recharge card title",
+    "type": "text",
+    "section": "DTH recharge service card",
+    "description": "A short service name displayed below its image.",
+    "placeholder": "DTH Recharge"
+  },
+  {
+    "key": "home.image.8",
+    "group": "home",
+    "label": "DTH recharge image",
+    "type": "image",
+    "section": "DTH recharge service card",
+    "description": "Upload an illustration or icon for this service."
+  },
+  {
+    "key": "home.color.9",
+    "group": "home",
+    "label": "DTH recharge background color",
+    "type": "color",
+    "section": "DTH recharge service card",
+    "description": "The background behind this service image. Choose a color using the color picker."
+  },
+  {
+    "key": "home.title.10",
+    "group": "home",
+    "label": "Electricity card title",
+    "type": "text",
+    "section": "Electricity service card",
+    "description": "A short service name displayed below its image.",
+    "placeholder": "Electricity"
+  },
+  {
+    "key": "home.image.11",
+    "group": "home",
+    "label": "Electricity image",
+    "type": "image",
+    "section": "Electricity service card",
+    "description": "Upload an illustration or icon for this service."
+  },
+  {
+    "key": "home.color.12",
+    "group": "home",
+    "label": "Electricity background color",
+    "type": "color",
+    "section": "Electricity service card",
+    "description": "The background behind this service image. Choose a color using the color picker."
+  },
+  {
+    "key": "home.title.13",
+    "group": "home",
+    "label": "Bill payments card title",
+    "type": "text",
+    "section": "Bill payments service card",
+    "description": "A short service name displayed below its image.",
+    "placeholder": "Bill Payments"
+  },
+  {
+    "key": "home.image.14",
+    "group": "home",
+    "label": "Bill payments image",
+    "type": "image",
+    "section": "Bill payments service card",
+    "description": "Upload an illustration or icon for this service."
+  },
+  {
+    "key": "home.color.15",
+    "group": "home",
+    "label": "Bill payments background color",
+    "type": "color",
+    "section": "Bill payments service card",
+    "description": "The background behind this service image. Choose a color using the color picker."
+  },
+  {
+    "key": "home.title.16",
+    "group": "home",
+    "label": "Wallet transfers card title",
+    "type": "text",
+    "section": "Wallet transfers service card",
+    "description": "A short service name displayed below its image.",
+    "placeholder": "Wallet Transfers"
+  },
+  {
+    "key": "home.image.17",
+    "group": "home",
+    "label": "Wallet transfers image",
+    "type": "image",
+    "section": "Wallet transfers service card",
+    "description": "Upload an illustration or icon for this service."
+  },
+  {
+    "key": "home.color.18",
+    "group": "home",
+    "label": "Wallet transfers background color",
+    "type": "color",
+    "section": "Wallet transfers service card",
+    "description": "The background behind this service image. Choose a color using the color picker."
   },
   {
     "key": "home.span.84",
     "group": "home",
-    "label": "span",
-    "type": "text"
+    "label": "Benefits section badge",
+    "type": "text",
+    "section": "Why choose us introduction",
+    "description": "Shown in the why choose us introduction section.",
+    "placeholder": "Why Choose Us"
   },
   {
     "key": "home.h2.85",
     "group": "home",
-    "label": "h2",
-    "type": "text"
+    "label": "Benefits section heading",
+    "type": "text",
+    "section": "Why choose us introduction",
+    "description": "Shown in the why choose us introduction section.",
+    "placeholder": "Built for Serious Fintech Businesses"
   },
   {
     "key": "home.p.86",
     "group": "home",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "home.to.87",
-    "group": "home",
-    "label": "to",
-    "type": "link"
+    "label": "Benefits section description",
+    "type": "text",
+    "section": "Why choose us introduction",
+    "description": "Shown in the why choose us introduction section.",
+    "placeholder": "Bring your payments, wallet records, commissions, and business network together. Clear tools for each part of your working day."
   },
   {
     "key": "home.Link.88",
     "group": "home",
-    "label": "Link",
-    "type": "text"
+    "label": "Benefits button text",
+    "type": "text",
+    "section": "Why choose us introduction",
+    "description": "Shown in the why choose us introduction section.",
+    "placeholder": "Get Started"
+  },
+  {
+    "key": "home.to.87",
+    "group": "home",
+    "label": "Benefits button destination",
+    "type": "link",
+    "section": "Why choose us introduction",
+    "description": "Shown in the why choose us introduction section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "home.title.19",
+    "group": "home",
+    "label": "Recharge processing benefit title",
+    "type": "text",
+    "section": "Recharge processing benefit card",
+    "description": "Shown in the recharge processing benefit card section.",
+    "placeholder": "Recharge Processing"
+  },
+  {
+    "key": "home.text.20",
+    "group": "home",
+    "label": "Recharge processing benefit description",
+    "type": "text",
+    "section": "Recharge processing benefit card",
+    "description": "Describe this benefit in one short sentence.",
+    "placeholder": "Submit supported payments and track their status in your workspace."
+  },
+  {
+    "key": "home.color.21",
+    "group": "home",
+    "label": "Recharge processing icon color",
+    "type": "color",
+    "section": "Recharge processing benefit card",
+    "description": "The accent color used for this benefit icon. Choose a color using the color picker."
+  },
+  {
+    "key": "home.title.22",
+    "group": "home",
+    "label": "Secure access benefit title",
+    "type": "text",
+    "section": "Secure access benefit card",
+    "description": "Shown in the secure access benefit card section.",
+    "placeholder": "Secure Access"
+  },
+  {
+    "key": "home.text.23",
+    "group": "home",
+    "label": "Secure access benefit description",
+    "type": "text",
+    "section": "Secure access benefit card",
+    "description": "Describe this benefit in one short sentence.",
+    "placeholder": "Account permissions keep each workspace scoped to its assigned role."
+  },
+  {
+    "key": "home.color.24",
+    "group": "home",
+    "label": "Secure access icon color",
+    "type": "color",
+    "section": "Secure access benefit card",
+    "description": "The accent color used for this benefit icon. Choose a color using the color picker."
+  },
+  {
+    "key": "home.title.25",
+    "group": "home",
+    "label": "Commissions benefit title",
+    "type": "text",
+    "section": "Commissions benefit card",
+    "description": "Shown in the commissions benefit card section.",
+    "placeholder": "Transparent Commissions"
+  },
+  {
+    "key": "home.text.26",
+    "group": "home",
+    "label": "Commissions benefit description",
+    "type": "text",
+    "section": "Commissions benefit card",
+    "description": "Describe this benefit in one short sentence.",
+    "placeholder": "Review commission records and the rules set by your business."
+  },
+  {
+    "key": "home.color.27",
+    "group": "home",
+    "label": "Commissions icon color",
+    "type": "color",
+    "section": "Commissions benefit card",
+    "description": "The accent color used for this benefit icon. Choose a color using the color picker."
+  },
+  {
+    "key": "home.title.28",
+    "group": "home",
+    "label": "Reports benefit title",
+    "type": "text",
+    "section": "Reports benefit card",
+    "description": "Shown in the reports benefit card section.",
+    "placeholder": "Transaction Reports"
+  },
+  {
+    "key": "home.text.29",
+    "group": "home",
+    "label": "Reports benefit description",
+    "type": "text",
+    "section": "Reports benefit card",
+    "description": "Describe this benefit in one short sentence.",
+    "placeholder": "Find payment history, wallet statements, and business activity together."
+  },
+  {
+    "key": "home.color.30",
+    "group": "home",
+    "label": "Reports icon color",
+    "type": "color",
+    "section": "Reports benefit card",
+    "description": "The accent color used for this benefit icon. Choose a color using the color picker."
+  },
+  {
+    "key": "home.title.31",
+    "group": "home",
+    "label": "Business network benefit title",
+    "type": "text",
+    "section": "Business network benefit card",
+    "description": "Shown in the business network benefit card section.",
+    "placeholder": "Connected Network"
+  },
+  {
+    "key": "home.text.32",
+    "group": "home",
+    "label": "Business network benefit description",
+    "type": "text",
+    "section": "Business network benefit card",
+    "description": "Describe this benefit in one short sentence.",
+    "placeholder": "Manage authorized Retailers and Distributors from one workspace."
+  },
+  {
+    "key": "home.color.33",
+    "group": "home",
+    "label": "Business network icon color",
+    "type": "color",
+    "section": "Business network benefit card",
+    "description": "The accent color used for this benefit icon. Choose a color using the color picker."
+  },
+  {
+    "key": "home.title.34",
+    "group": "home",
+    "label": "Business identity benefit title",
+    "type": "text",
+    "section": "Business identity benefit card",
+    "description": "Shown in the business identity benefit card section.",
+    "placeholder": "Your Business Identity"
+  },
+  {
+    "key": "home.text.35",
+    "group": "home",
+    "label": "Business identity benefit description",
+    "type": "text",
+    "section": "Business identity benefit card",
+    "description": "Describe this benefit in one short sentence.",
+    "placeholder": "Use your business branding on a verified custom domain."
+  },
+  {
+    "key": "home.color.36",
+    "group": "home",
+    "label": "Business identity icon color",
+    "type": "color",
+    "section": "Business identity benefit card",
+    "description": "The accent color used for this benefit icon. Choose a color using the color picker."
   },
   {
     "key": "home.span.89",
     "group": "home",
-    "label": "span",
-    "type": "text"
+    "label": "Business roles section badge",
+    "type": "text",
+    "section": "Business roles introduction",
+    "description": "Shown in the business roles introduction section.",
+    "placeholder": "Business Models"
   },
   {
     "key": "home.h2.90",
     "group": "home",
-    "label": "h2",
-    "type": "text"
-  },
-  {
-    "key": "home.h2.91",
-    "group": "home",
-    "label": "h2",
-    "type": "text"
-  },
-  {
-    "key": "home.p.92",
-    "group": "home",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "home.to.93",
-    "group": "home",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "home.Link.94",
-    "group": "home",
-    "label": "Link",
-    "type": "text"
-  },
-  {
-    "key": "home.to.95",
-    "group": "home",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "home.Link.96",
-    "group": "home",
-    "label": "Link",
-    "type": "text"
-  },
-  {
-    "key": "about.title.1",
-    "group": "about",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "about.description.2",
-    "group": "about",
-    "label": "description",
-    "type": "text"
-  },
-  {
-    "key": "about.title.3",
-    "group": "about",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "about.description.4",
-    "group": "about",
-    "label": "description",
-    "type": "text"
-  },
-  {
-    "key": "about.title.5",
-    "group": "about",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "about.description.6",
-    "group": "about",
-    "label": "description",
-    "type": "text"
-  },
-  {
-    "key": "about.title.7",
-    "group": "about",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "about.description.8",
-    "group": "about",
-    "label": "description",
-    "type": "text"
-  },
-  {
-    "key": "about.h1.9",
-    "group": "about",
-    "label": "h1",
-    "type": "text"
-  },
-  {
-    "key": "about.p.10",
-    "group": "about",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "about.h2.11",
-    "group": "about",
-    "label": "h2",
-    "type": "text"
-  },
-  {
-    "key": "about.p.12",
-    "group": "about",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "about.p.13",
-    "group": "about",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "contact.h1.1",
-    "group": "contact",
-    "label": "h1",
-    "type": "text"
-  },
-  {
-    "key": "contact.p.2",
-    "group": "contact",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "contact.p.3",
-    "group": "contact",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "contact.p.4",
-    "group": "contact",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "contact.h3.5",
-    "group": "contact",
-    "label": "h3",
-    "type": "text"
-  },
-  {
-    "key": "contact.h3.6",
-    "group": "contact",
-    "label": "h3",
-    "type": "text"
-  },
-  {
-    "key": "contact.p.7",
-    "group": "contact",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "contact.h3.8",
-    "group": "contact",
-    "label": "h3",
-    "type": "text"
-  },
-  {
-    "key": "contact.p.9",
-    "group": "contact",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "contact.h2.10",
-    "group": "contact",
-    "label": "h2",
-    "type": "text"
-  },
-  {
-    "key": "contact.label.11",
-    "group": "contact",
-    "label": "label",
-    "type": "text"
-  },
-  {
-    "key": "contact.placeholder.12",
-    "group": "contact",
-    "label": "placeholder",
-    "type": "text"
-  },
-  {
-    "key": "contact.label.13",
-    "group": "contact",
-    "label": "label",
-    "type": "text"
-  },
-  {
-    "key": "contact.placeholder.14",
-    "group": "contact",
-    "label": "placeholder",
-    "type": "text"
-  },
-  {
-    "key": "contact.label.15",
-    "group": "contact",
-    "label": "label",
-    "type": "text"
-  },
-  {
-    "key": "contact.placeholder.16",
-    "group": "contact",
-    "label": "placeholder",
-    "type": "text"
-  },
-  {
-    "key": "contact.button.17",
-    "group": "contact",
-    "label": "button",
-    "type": "text"
-  },
-  {
-    "key": "contact.p.18",
-    "group": "contact",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "contact.p.19",
-    "group": "contact",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "terms.title.1",
-    "group": "terms",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "terms.text.2",
-    "group": "terms",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "terms.title.3",
-    "group": "terms",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "terms.text.4",
-    "group": "terms",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "terms.title.5",
-    "group": "terms",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "terms.text.6",
-    "group": "terms",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "terms.title.7",
-    "group": "terms",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "terms.text.8",
-    "group": "terms",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "terms.title.9",
-    "group": "terms",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "terms.text.10",
-    "group": "terms",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "terms.h1.11",
-    "group": "terms",
-    "label": "h1",
-    "type": "text"
-  },
-  {
-    "key": "terms.p.12",
-    "group": "terms",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "terms.dateTime.13",
-    "group": "terms",
-    "label": "dateTime",
-    "type": "date"
-  },
-  {
-    "key": "terms.time.14",
-    "group": "terms",
-    "label": "time",
-    "type": "text"
-  },
-  {
-    "key": "privacy.title.1",
-    "group": "privacy",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "privacy.text.2",
-    "group": "privacy",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "privacy.title.3",
-    "group": "privacy",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "privacy.text.4",
-    "group": "privacy",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "privacy.title.5",
-    "group": "privacy",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "privacy.text.6",
-    "group": "privacy",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "privacy.title.7",
-    "group": "privacy",
-    "label": "title",
-    "type": "text"
-  },
-  {
-    "key": "privacy.text.8",
-    "group": "privacy",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "privacy.h1.9",
-    "group": "privacy",
-    "label": "h1",
-    "type": "text"
-  },
-  {
-    "key": "privacy.p.10",
-    "group": "privacy",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "privacy.dateTime.11",
-    "group": "privacy",
-    "label": "dateTime",
-    "type": "date"
-  },
-  {
-    "key": "privacy.time.12",
-    "group": "privacy",
-    "label": "time",
-    "type": "text"
-  },
-  {
-    "key": "privacy.h2.13",
-    "group": "privacy",
-    "label": "h2",
-    "type": "text"
-  },
-  {
-    "key": "privacy.p.14",
-    "group": "privacy",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "privacy.to.15",
-    "group": "privacy",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "privacy.Link.16",
-    "group": "privacy",
-    "label": "Link",
-    "type": "text"
-  },
-  {
-    "key": "footer.to.1",
-    "group": "footer",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "footer.p.3",
-    "group": "footer",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "footer.h3.4",
-    "group": "footer",
-    "label": "h3",
-    "type": "text"
-  },
-  {
-    "key": "footer.service.5",
-    "group": "footer",
-    "label": "service",
-    "type": "text"
-  },
-  {
-    "key": "footer.service.6",
-    "group": "footer",
-    "label": "service",
-    "type": "text"
-  },
-  {
-    "key": "footer.service.7",
-    "group": "footer",
-    "label": "service",
-    "type": "text"
-  },
-  {
-    "key": "footer.service.8",
-    "group": "footer",
-    "label": "service",
-    "type": "text"
-  },
-  {
-    "key": "footer.to.9",
-    "group": "footer",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "footer.h3.10",
-    "group": "footer",
-    "label": "h3",
-    "type": "text"
-  },
-  {
-    "key": "footer.to.11",
-    "group": "footer",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "footer.Link.12",
-    "group": "footer",
-    "label": "Link",
-    "type": "text"
-  },
-  {
-    "key": "footer.to.13",
-    "group": "footer",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "footer.Link.14",
-    "group": "footer",
-    "label": "Link",
-    "type": "text"
-  },
-  {
-    "key": "footer.to.15",
-    "group": "footer",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "footer.Link.16",
-    "group": "footer",
-    "label": "Link",
-    "type": "text"
-  },
-  {
-    "key": "footer.to.17",
-    "group": "footer",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "footer.Link.18",
-    "group": "footer",
-    "label": "Link",
-    "type": "text"
-  },
-  {
-    "key": "footer.h3.19",
-    "group": "footer",
-    "label": "h3",
-    "type": "text"
-  },
-  {
-    "key": "footer.p.20",
-    "group": "footer",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "footer.text.21",
-    "group": "footer",
-    "label": "text",
-    "type": "link"
-  },
-  {
-    "key": "footer.text.22",
-    "group": "footer",
-    "label": "text",
-    "type": "link"
-  },
-  {
-    "key": "footer.text.23",
-    "group": "footer",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "footer.text.24",
-    "group": "footer",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "footer.div.25",
-    "group": "footer",
-    "label": "div",
-    "type": "text"
-  },
-  {
-    "key": "footer.to.26",
-    "group": "footer",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "footer.Link.27",
-    "group": "footer",
-    "label": "Link",
-    "type": "text"
-  },
-  {
-    "key": "footer.p.28",
-    "group": "footer",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "footer.p.29",
-    "group": "footer",
-    "label": "p",
-    "type": "text"
-  },
-  {
-    "key": "footer.to.30",
-    "group": "footer",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "footer.Link.31",
-    "group": "footer",
-    "label": "Link",
-    "type": "text"
-  },
-  {
-    "key": "footer.to.32",
-    "group": "footer",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "footer.Link.33",
-    "group": "footer",
-    "label": "Link",
-    "type": "text"
-  },
-  {
-    "key": "navigation.to.1",
-    "group": "navigation",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "navigation.label.2",
-    "group": "navigation",
-    "label": "label",
-    "type": "text"
-  },
-  {
-    "key": "navigation.to.3",
-    "group": "navigation",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "navigation.label.4",
-    "group": "navigation",
-    "label": "label",
-    "type": "text"
-  },
-  {
-    "key": "navigation.to.5",
-    "group": "navigation",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "navigation.label.6",
-    "group": "navigation",
-    "label": "label",
-    "type": "text"
-  },
-  {
-    "key": "navigation.to.7",
-    "group": "navigation",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "navigation.label.8",
-    "group": "navigation",
-    "label": "label",
-    "type": "text"
-  },
-  {
-    "key": "navigation.a.9",
-    "group": "navigation",
-    "label": "a",
-    "type": "text"
-  },
-  {
-    "key": "navigation.to.10",
-    "group": "navigation",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "navigation.to.11",
-    "group": "navigation",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "navigation.Link.12",
-    "group": "navigation",
-    "label": "Link",
-    "type": "text"
-  },
-  {
-    "key": "navigation.to.13",
-    "group": "navigation",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "navigation.Link.14",
-    "group": "navigation",
-    "label": "Link",
-    "type": "text"
-  },
-  {
-    "key": "navigation.to.15",
-    "group": "navigation",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "navigation.Link.16",
-    "group": "navigation",
-    "label": "Link",
-    "type": "text"
-  },
-  {
-    "key": "navigation.to.17",
-    "group": "navigation",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "navigation.Link.18",
-    "group": "navigation",
-    "label": "Link",
-    "type": "text"
-  },
-  {
-    "key": "auth.to.1",
-    "group": "auth",
-    "label": "to",
-    "type": "link"
-  },
-  {
-    "key": "auth.text.2",
-    "group": "auth",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "auth.text.3",
-    "group": "auth",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "auth.text.4",
-    "group": "auth",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "auth.text.5",
-    "group": "auth",
-    "label": "text",
-    "type": "text"
-  },
-  {
-    "key": "auth.li.6",
-    "group": "auth",
-    "label": "li",
-    "type": "text"
-  },
-  {
-    "key": "auth.li.7",
-    "group": "auth",
-    "label": "li",
-    "type": "text"
-  },
-  {
-    "key": "auth.li.8",
-    "group": "auth",
-    "label": "li",
-    "type": "text"
-  },
-  {
-    "key": "auth.li.9",
-    "group": "auth",
-    "label": "li",
-    "type": "text"
-  },
-  {
-    "key": "auth.small.10",
-    "group": "auth",
-    "label": "small",
-    "type": "text"
-  },
-  {
-    "key": "auth.strong.11",
-    "group": "auth",
-    "label": "strong",
-    "type": "text"
-  },
-  {
-    "key": "auth.span.12",
-    "group": "auth",
-    "label": "span",
-    "type": "text"
+    "label": "Business roles section heading",
+    "type": "text",
+    "section": "Business roles introduction",
+    "description": "Shown in the business roles introduction section.",
+    "placeholder": "Choose Your Role & Get Connected"
   },
   {
     "key": "home.roleJoin",
     "group": "home",
-    "label": "Join button label",
-    "type": "text"
+    "label": "Join role button text",
+    "type": "text",
+    "section": "Business roles introduction",
+    "description": "Shared button text for the Retailer and Distributor cards.",
+    "placeholder": "Join Now"
   },
   {
     "key": "home.roleContact",
     "group": "home",
-    "label": "Contact button label",
-    "type": "text"
+    "label": "Business owner button text",
+    "type": "text",
+    "section": "Business roles introduction",
+    "description": "Shown in the business roles introduction section.",
+    "placeholder": "Contact Us"
+  },
+  {
+    "key": "home.title.37",
+    "group": "home",
+    "label": "Retailer role title",
+    "type": "text",
+    "section": "Retailer role card",
+    "description": "Shown in the retailer role card section.",
+    "placeholder": "Retailer"
+  },
+  {
+    "key": "home.text.38",
+    "group": "home",
+    "label": "Retailer role description",
+    "type": "text",
+    "section": "Retailer role card",
+    "description": "Shown in the retailer role card section.",
+    "placeholder": "Serve your customers with supported recharges and bill payments."
+  },
+  {
+    "key": "home.highlight.39",
+    "group": "home",
+    "label": "Retailer feature highlight",
+    "type": "text",
+    "section": "Retailer role card",
+    "description": "Shown in the retailer role card section.",
+    "placeholder": "Recharge & Bills"
+  },
+  {
+    "key": "home.caption.40",
+    "group": "home",
+    "label": "Retailer short caption",
+    "type": "text",
+    "section": "Retailer role card",
+    "description": "Shown in the retailer role card section.",
+    "placeholder": "Your customer workspace"
+  },
+  {
+    "key": "home.to.41",
+    "group": "home",
+    "label": "Retailer button destination",
+    "type": "link",
+    "section": "Retailer role card",
+    "description": "Shown in the retailer role card section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "home.title.42",
+    "group": "home",
+    "label": "Distributor role title",
+    "type": "text",
+    "section": "Distributor role card",
+    "description": "Shown in the distributor role card section.",
+    "placeholder": "Distributor"
+  },
+  {
+    "key": "home.text.43",
+    "group": "home",
+    "label": "Distributor role description",
+    "type": "text",
+    "section": "Distributor role card",
+    "description": "Shown in the distributor role card section.",
+    "placeholder": "Support your authorized Retailers and manage your business network."
+  },
+  {
+    "key": "home.highlight.44",
+    "group": "home",
+    "label": "Distributor feature highlight",
+    "type": "text",
+    "section": "Distributor role card",
+    "description": "Shown in the distributor role card section.",
+    "placeholder": "Retail Network"
+  },
+  {
+    "key": "home.caption.45",
+    "group": "home",
+    "label": "Distributor short caption",
+    "type": "text",
+    "section": "Distributor role card",
+    "description": "Shown in the distributor role card section.",
+    "placeholder": "Connected business tools"
+  },
+  {
+    "key": "home.to.46",
+    "group": "home",
+    "label": "Distributor button destination",
+    "type": "link",
+    "section": "Distributor role card",
+    "description": "Shown in the distributor role card section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "home.title.47",
+    "group": "home",
+    "label": "Business owner role title",
+    "type": "text",
+    "section": "Business owner role card",
+    "description": "Shown in the business owner role card section.",
+    "placeholder": "Business Owner"
+  },
+  {
+    "key": "home.text.48",
+    "group": "home",
+    "label": "Business owner role description",
+    "type": "text",
+    "section": "Business owner role card",
+    "description": "Shown in the business owner role card section.",
+    "placeholder": "Manage your business, branding, commission rules, and team access."
+  },
+  {
+    "key": "home.highlight.49",
+    "group": "home",
+    "label": "Business owner feature highlight",
+    "type": "text",
+    "section": "Business owner role card",
+    "description": "Shown in the business owner role card section.",
+    "placeholder": "Business Control"
+  },
+  {
+    "key": "home.caption.50",
+    "group": "home",
+    "label": "Business owner short caption",
+    "type": "text",
+    "section": "Business owner role card",
+    "description": "Shown in the business owner role card section.",
+    "placeholder": "Your tenant workspace"
+  },
+  {
+    "key": "home.to.51",
+    "group": "home",
+    "label": "Business owner button destination",
+    "type": "link",
+    "section": "Business owner role card",
+    "description": "Shown in the business owner role card section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "home.h2.91",
+    "group": "home",
+    "label": "Closing invitation heading",
+    "type": "text",
+    "section": "Closing invitation",
+    "description": "Shown in the closing invitation section.",
+    "placeholder": "Ready to Grow Your Business?"
+  },
+  {
+    "key": "home.p.92",
+    "group": "home",
+    "label": "Closing invitation description",
+    "type": "text",
+    "section": "Closing invitation",
+    "description": "Shown in the closing invitation section.",
+    "placeholder": "Connect with your business administrator and get the tools to manage your everyday digital services."
+  },
+  {
+    "key": "home.Link.94",
+    "group": "home",
+    "label": "Account request button text",
+    "type": "text",
+    "section": "Closing invitation",
+    "description": "Shown in the closing invitation section.",
+    "placeholder": "Request an Account"
+  },
+  {
+    "key": "home.to.93",
+    "group": "home",
+    "label": "Account request button destination",
+    "type": "link",
+    "section": "Closing invitation",
+    "description": "Shown in the closing invitation section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "home.Link.96",
+    "group": "home",
+    "label": "Sales button text",
+    "type": "text",
+    "section": "Closing invitation",
+    "description": "Shown in the closing invitation section.",
+    "placeholder": "Talk to Sales"
+  },
+  {
+    "key": "home.to.95",
+    "group": "home",
+    "label": "Sales button destination",
+    "type": "link",
+    "section": "Closing invitation",
+    "description": "Shown in the closing invitation section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "about.h1.9",
+    "group": "about",
+    "label": "About page title",
+    "type": "text",
+    "section": "Page introduction",
+    "description": "Shown in the page introduction section.",
+    "placeholder": "About Us"
+  },
+  {
+    "key": "about.p.10",
+    "group": "about",
+    "label": "About page introduction",
+    "type": "text",
+    "section": "Page introduction",
+    "description": "Shown in the page introduction section.",
+    "placeholder": "A connected platform for your everyday recharge, bill payments, and business network."
+  },
+  {
+    "key": "about.h2.11",
+    "group": "about",
+    "label": "Company story heading",
+    "type": "text",
+    "section": "Company story",
+    "description": "Shown in the company story section.",
+    "placeholder": "Who We Are"
+  },
+  {
+    "key": "about.p.12",
+    "group": "about",
+    "label": "Company story opening paragraph",
+    "type": "text",
+    "section": "Company story",
+    "description": "This paragraph follows your business name. Start with a verb, for example “brings recharge services…”.",
+    "placeholder": "brings recharge and supported bill payments into a shared business workspace. Business owners, Distributors, and Retailers can manage their authorized"
+  },
+  {
+    "key": "about.p.13",
+    "group": "about",
+    "label": "Company story second paragraph",
+    "type": "text",
+    "section": "Company story",
+    "description": "Explain your services, values, and how you support customers.",
+    "placeholder": "With role-based access, wallet records, and commission tracking, the platform keeps your business activity organized. Review transactions, manage your"
+  },
+  {
+    "key": "about.title.1",
+    "group": "about",
+    "label": "Speed highlight title",
+    "type": "text",
+    "section": "Speed highlight",
+    "description": "Shown in the speed highlight section.",
+    "placeholder": "Fast"
+  },
+  {
+    "key": "about.description.2",
+    "group": "about",
+    "label": "Speed highlight description",
+    "type": "text",
+    "section": "Speed highlight",
+    "description": "Shown in the speed highlight section.",
+    "placeholder": "A streamlined payment workflow"
+  },
+  {
+    "key": "about.title.3",
+    "group": "about",
+    "label": "Security highlight title",
+    "type": "text",
+    "section": "Security highlight",
+    "description": "Shown in the security highlight section.",
+    "placeholder": "Secure"
+  },
+  {
+    "key": "about.description.4",
+    "group": "about",
+    "label": "Security highlight description",
+    "type": "text",
+    "section": "Security highlight",
+    "description": "Shown in the security highlight section.",
+    "placeholder": "Role-based account access"
+  },
+  {
+    "key": "about.title.5",
+    "group": "about",
+    "label": "Connectivity highlight title",
+    "type": "text",
+    "section": "Connectivity highlight",
+    "description": "Shown in the connectivity highlight section.",
+    "placeholder": "Connected"
+  },
+  {
+    "key": "about.description.6",
+    "group": "about",
+    "label": "Connectivity highlight description",
+    "type": "text",
+    "section": "Connectivity highlight",
+    "description": "Shown in the connectivity highlight section.",
+    "placeholder": "Your business network, together"
+  },
+  {
+    "key": "about.title.7",
+    "group": "about",
+    "label": "Transparency highlight title",
+    "type": "text",
+    "section": "Transparency highlight",
+    "description": "Shown in the transparency highlight section.",
+    "placeholder": "Transparent"
+  },
+  {
+    "key": "about.description.8",
+    "group": "about",
+    "label": "Transparency highlight description",
+    "type": "text",
+    "section": "Transparency highlight",
+    "description": "Shown in the transparency highlight section.",
+    "placeholder": "Clear commissions & reports"
+  },
+  {
+    "key": "contact.h1.1",
+    "group": "contact",
+    "label": "Contact page title",
+    "type": "text",
+    "section": "Page introduction",
+    "description": "Shown in the page introduction section.",
+    "placeholder": "Contact Us"
+  },
+  {
+    "key": "contact.p.2",
+    "group": "contact",
+    "label": "Introduction before business name",
+    "type": "text",
+    "section": "Page introduction",
+    "description": "The introduction displays this text, your business name, then the following text.",
+    "placeholder": "We’re here to help — reach"
+  },
+  {
+    "key": "contact.p.3",
+    "group": "contact",
+    "label": "Introduction after business name",
+    "type": "text",
+    "section": "Page introduction",
+    "description": "Shown in the page introduction section.",
+    "placeholder": "anytime."
+  },
+  {
+    "key": "contact.p.4",
+    "group": "contact",
+    "label": "Contact panel introduction",
+    "type": "text",
+    "section": "Business contact panel",
+    "description": "Actual address, phone and email are edited under Brand & contact details.",
+    "placeholder": "Company details & registered information"
+  },
+  {
+    "key": "contact.h3.5",
+    "group": "contact",
+    "label": "Address heading",
+    "type": "text",
+    "section": "Business contact panel",
+    "description": "Shown in the business contact panel section.",
+    "placeholder": "Address"
+  },
+  {
+    "key": "contact.h3.6",
+    "group": "contact",
+    "label": "Phone heading",
+    "type": "text",
+    "section": "Business contact panel",
+    "description": "Shown in the business contact panel section.",
+    "placeholder": "Support Phone"
+  },
+  {
+    "key": "contact.p.7",
+    "group": "contact",
+    "label": "Message when phone is unavailable",
+    "type": "text",
+    "section": "Business contact panel",
+    "description": "Shown only if no support phone number is saved.",
+    "placeholder": "Contact your business administrator."
+  },
+  {
+    "key": "contact.h3.8",
+    "group": "contact",
+    "label": "Email heading",
+    "type": "text",
+    "section": "Business contact panel",
+    "description": "Shown in the business contact panel section.",
+    "placeholder": "Support Email"
+  },
+  {
+    "key": "contact.p.9",
+    "group": "contact",
+    "label": "Message when email is unavailable",
+    "type": "text",
+    "section": "Business contact panel",
+    "description": "Shown only if no support email is saved.",
+    "placeholder": "Contact your business administrator."
+  },
+  {
+    "key": "contact.h2.10",
+    "group": "contact",
+    "label": "Contact form heading",
+    "type": "text",
+    "section": "Contact form",
+    "description": "Shown in the contact form section.",
+    "placeholder": "Send a Message"
+  },
+  {
+    "key": "contact.label.11",
+    "group": "contact",
+    "label": "Name field label",
+    "type": "text",
+    "section": "Contact form",
+    "description": "Shown in the contact form section.",
+    "placeholder": "Your Name"
+  },
+  {
+    "key": "contact.placeholder.12",
+    "group": "contact",
+    "label": "Name field example",
+    "type": "text",
+    "section": "Contact form",
+    "description": "Shown in the contact form section.",
+    "placeholder": "Full Name"
+  },
+  {
+    "key": "contact.label.13",
+    "group": "contact",
+    "label": "Email field label",
+    "type": "text",
+    "section": "Contact form",
+    "description": "Shown in the contact form section.",
+    "placeholder": "Email Address"
+  },
+  {
+    "key": "contact.placeholder.14",
+    "group": "contact",
+    "label": "Email field example",
+    "type": "text",
+    "section": "Contact form",
+    "description": "Shown in the contact form section.",
+    "placeholder": "you@email.com"
+  },
+  {
+    "key": "contact.label.15",
+    "group": "contact",
+    "label": "Message field label",
+    "type": "text",
+    "section": "Contact form",
+    "description": "Shown in the contact form section.",
+    "placeholder": "Message"
+  },
+  {
+    "key": "contact.placeholder.16",
+    "group": "contact",
+    "label": "Message field example",
+    "type": "text",
+    "section": "Contact form",
+    "description": "Shown in the contact form section.",
+    "placeholder": "How can we help you?"
+  },
+  {
+    "key": "contact.button.17",
+    "group": "contact",
+    "label": "Contact form button text",
+    "type": "text",
+    "section": "Contact form",
+    "description": "This button opens an email draft; it does not submit directly to a support inbox.",
+    "placeholder": "Send Message"
+  },
+  {
+    "key": "contact.p.18",
+    "group": "contact",
+    "label": "Email draft notice before address",
+    "type": "text",
+    "section": "Contact form",
+    "description": "Shown after opening a draft, followed by your support email address.",
+    "placeholder": "Continue in your email app to send your message. If it did not open, email"
+  },
+  {
+    "key": "contact.p.19",
+    "group": "contact",
+    "label": "Email draft notice after address",
+    "type": "text",
+    "section": "Contact form",
+    "description": "Shown in the contact form section.",
+    "placeholder": "directly."
+  },
+  {
+    "key": "terms.h1.11",
+    "group": "terms",
+    "label": "Terms page title",
+    "type": "text",
+    "section": "Page heading and update date",
+    "description": "Shown in the page heading and update date section.",
+    "placeholder": "Terms & Conditions"
+  },
+  {
+    "key": "terms.p.12",
+    "group": "terms",
+    "label": "Last updated label",
+    "type": "text",
+    "section": "Page heading and update date",
+    "description": "Shown in the page heading and update date section.",
+    "placeholder": "Last updated:"
+  },
+  {
+    "key": "terms.dateTime.13",
+    "group": "terms",
+    "label": "Last updated date",
+    "type": "date",
+    "section": "Page heading and update date",
+    "description": "Choose the effective date; the displayed date is formatted automatically."
+  },
+  {
+    "key": "terms.title.1",
+    "group": "terms",
+    "label": "Section 1 heading",
+    "type": "text",
+    "section": "Section 1: Acceptance of terms",
+    "description": "Shown in the section 1: acceptance of terms section.",
+    "placeholder": "Acceptance of Terms"
+  },
+  {
+    "key": "terms.text.2",
+    "group": "terms",
+    "label": "Section 1 paragraph",
+    "type": "text",
+    "section": "Section 1: Acceptance of terms",
+    "description": "Write the policy text for this section. Use {{brand}} to insert the business name.",
+    "placeholder": "Access to {{brand}} means you accept the conditions described here."
+  },
+  {
+    "key": "terms.title.3",
+    "group": "terms",
+    "label": "Section 2 heading",
+    "type": "text",
+    "section": "Section 2: Services",
+    "description": "Shown in the section 2: services section.",
+    "placeholder": "Services"
+  },
+  {
+    "key": "terms.text.4",
+    "group": "terms",
+    "label": "Section 2 paragraph",
+    "type": "text",
+    "section": "Section 2: Services",
+    "description": "Write the policy text for this section. Use {{brand}} to insert the business name.",
+    "placeholder": "Authorized business accounts can use the platform for mobile top-ups, bill settlements, and supported wallet transfers."
+  },
+  {
+    "key": "terms.title.5",
+    "group": "terms",
+    "label": "Section 3 heading",
+    "type": "text",
+    "section": "Section 3: Account responsibilities",
+    "description": "Shown in the section 3: account responsibilities section.",
+    "placeholder": "Account Responsibilities"
+  },
+  {
+    "key": "terms.text.6",
+    "group": "terms",
+    "label": "Section 3 paragraph",
+    "type": "text",
+    "section": "Section 3: Account responsibilities",
+    "description": "Write the policy text for this section. Use {{brand}} to insert the business name.",
+    "placeholder": "Keep your sign-in details private. As the account holder, you are accountable for activity carried out using your account."
+  },
+  {
+    "key": "terms.title.7",
+    "group": "terms",
+    "label": "Section 4 heading",
+    "type": "text",
+    "section": "Section 4: Wallet and transactions",
+    "description": "Shown in the section 4: wallet and transactions section.",
+    "placeholder": "Wallet & Transactions"
+  },
+  {
+    "key": "terms.text.8",
+    "group": "terms",
+    "label": "Section 4 paragraph",
+    "type": "text",
+    "section": "Section 4: Wallet and transactions",
+    "description": "Write the policy text for this section. Use {{brand}} to insert the business name.",
+    "placeholder": "Wallet deposits are generally not refundable, except where a specific exception is stated. Completed payments cannot be undone."
+  },
+  {
+    "key": "terms.title.9",
+    "group": "terms",
+    "label": "Section 5 heading",
+    "type": "text",
+    "section": "Section 5: Limitation of liability",
+    "description": "Shown in the section 5: limitation of liability section.",
+    "placeholder": "Limitation of Liability"
+  },
+  {
+    "key": "terms.text.10",
+    "group": "terms",
+    "label": "Section 5 paragraph",
+    "type": "text",
+    "section": "Section 5: Limitation of liability",
+    "description": "Write the policy text for this section. Use {{brand}} to insert the business name.",
+    "placeholder": "{{brand}} accepts no responsibility for indirect losses, incidental expenses, or consequential damage resulting from use of the platform."
+  },
+  {
+    "key": "privacy.h1.9",
+    "group": "privacy",
+    "label": "Privacy page title",
+    "type": "text",
+    "section": "Page heading and update date",
+    "description": "Shown in the page heading and update date section.",
+    "placeholder": "Privacy Policy"
+  },
+  {
+    "key": "privacy.p.10",
+    "group": "privacy",
+    "label": "Last updated label",
+    "type": "text",
+    "section": "Page heading and update date",
+    "description": "Shown in the page heading and update date section.",
+    "placeholder": "Last updated:"
+  },
+  {
+    "key": "privacy.dateTime.11",
+    "group": "privacy",
+    "label": "Last updated date",
+    "type": "date",
+    "section": "Page heading and update date",
+    "description": "Choose the effective date; the displayed date is formatted automatically."
+  },
+  {
+    "key": "privacy.title.1",
+    "group": "privacy",
+    "label": "Section 1 heading",
+    "type": "text",
+    "section": "Section 1: Information collected",
+    "description": "Shown in the section 1: information collected section.",
+    "placeholder": "Information We Collect"
+  },
+  {
+    "key": "privacy.text.2",
+    "group": "privacy",
+    "label": "Section 1 paragraph",
+    "type": "text",
+    "section": "Section 1: Information collected",
+    "description": "Write the policy text for this section. Use {{brand}} to insert the business name.",
+    "placeholder": "We need your name, email, mobile number, and payment records to deliver our services."
+  },
+  {
+    "key": "privacy.title.3",
+    "group": "privacy",
+    "label": "Section 2 heading",
+    "type": "text",
+    "section": "Section 2: Use of information",
+    "description": "Shown in the section 2: use of information section.",
+    "placeholder": "How We Use Information"
+  },
+  {
+    "key": "privacy.text.4",
+    "group": "privacy",
+    "label": "Section 2 paragraph",
+    "type": "text",
+    "section": "Section 2: Use of information",
+    "description": "Write the policy text for this section. Use {{brand}} to insert the business name.",
+    "placeholder": "Account details support payment processing, customer assistance, and platform improvements. Personal information is not offered for sale to other busi"
+  },
+  {
+    "key": "privacy.title.5",
+    "group": "privacy",
+    "label": "Section 3 heading",
+    "type": "text",
+    "section": "Section 3: Data security",
+    "description": "Shown in the section 3: data security section.",
+    "placeholder": "Data Security"
+  },
+  {
+    "key": "privacy.text.6",
+    "group": "privacy",
+    "label": "Section 3 paragraph",
+    "type": "text",
+    "section": "Section 3: Data security",
+    "description": "Write the policy text for this section. Use {{brand}} to insert the business name.",
+    "placeholder": "Password hashing, protected session credentials, and role-based permissions help safeguard account information."
+  },
+  {
+    "key": "privacy.title.7",
+    "group": "privacy",
+    "label": "Section 4 heading",
+    "type": "text",
+    "section": "Section 4: Cookies",
+    "description": "Shown in the section 4: cookies section.",
+    "placeholder": "Cookies"
+  },
+  {
+    "key": "privacy.text.8",
+    "group": "privacy",
+    "label": "Section 4 paragraph",
+    "type": "text",
+    "section": "Section 4: Cookies",
+    "description": "Write the policy text for this section. Use {{brand}} to insert the business name.",
+    "placeholder": "A protected cookie supports authentication; this frontend adds no marketing cookies."
+  },
+  {
+    "key": "privacy.h2.13",
+    "group": "privacy",
+    "label": "Contact section heading",
+    "type": "text",
+    "section": "Section 5: Contact",
+    "description": "Include the section number, for example “5. Contact”.",
+    "placeholder": "5. Contact"
+  },
+  {
+    "key": "privacy.p.14",
+    "group": "privacy",
+    "label": "Privacy contact introduction",
+    "type": "text",
+    "section": "Section 5: Contact",
+    "description": "Text shown immediately before the Contact page link.",
+    "placeholder": "Questions about personal information can be raised through our"
+  },
+  {
+    "key": "privacy.Link.16",
+    "group": "privacy",
+    "label": "Privacy contact link text",
+    "type": "text",
+    "section": "Section 5: Contact",
+    "description": "Shown in the section 5: contact section.",
+    "placeholder": "Contact page"
+  },
+  {
+    "key": "privacy.to.15",
+    "group": "privacy",
+    "label": "Privacy contact link destination",
+    "type": "link",
+    "section": "Section 5: Contact",
+    "description": "Shown in the section 5: contact section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "navigation.label.2",
+    "group": "navigation",
+    "label": "Home menu text",
+    "type": "text",
+    "section": "Main navigation links",
+    "description": "Shown in the main navigation links section.",
+    "placeholder": "Home"
+  },
+  {
+    "key": "navigation.to.1",
+    "group": "navigation",
+    "label": "Home menu destination",
+    "type": "link",
+    "section": "Main navigation links",
+    "description": "Shown in the main navigation links section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "navigation.label.4",
+    "group": "navigation",
+    "label": "About menu text",
+    "type": "text",
+    "section": "Main navigation links",
+    "description": "Shown in the main navigation links section.",
+    "placeholder": "About"
+  },
+  {
+    "key": "navigation.to.3",
+    "group": "navigation",
+    "label": "About menu destination",
+    "type": "link",
+    "section": "Main navigation links",
+    "description": "Shown in the main navigation links section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "navigation.label.6",
+    "group": "navigation",
+    "label": "Contact menu text",
+    "type": "text",
+    "section": "Main navigation links",
+    "description": "Shown in the main navigation links section.",
+    "placeholder": "Contact"
+  },
+  {
+    "key": "navigation.to.5",
+    "group": "navigation",
+    "label": "Contact menu destination",
+    "type": "link",
+    "section": "Main navigation links",
+    "description": "Shown in the main navigation links section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "navigation.label.8",
+    "group": "navigation",
+    "label": "Terms menu text",
+    "type": "text",
+    "section": "Main navigation links",
+    "description": "Shown in the main navigation links section.",
+    "placeholder": "Terms"
+  },
+  {
+    "key": "navigation.to.7",
+    "group": "navigation",
+    "label": "Terms menu destination",
+    "type": "link",
+    "section": "Main navigation links",
+    "description": "Shown in the main navigation links section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "navigation.to.10",
+    "group": "navigation",
+    "label": "Header logo destination",
+    "type": "link",
+    "section": "Logo and accessibility",
+    "description": "Shown in the logo and accessibility section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "navigation.a.9",
+    "group": "navigation",
+    "label": "Skip navigation link text",
+    "type": "text",
+    "section": "Logo and accessibility",
+    "description": "Keyboard shortcut link that jumps to the page content.",
+    "placeholder": "Skip to content"
+  },
+  {
+    "key": "navigation.Link.16",
+    "group": "navigation",
+    "label": "Desktop login button text",
+    "type": "text",
+    "section": "Desktop account buttons",
+    "description": "Shown in the desktop account buttons section.",
+    "placeholder": "Login"
+  },
+  {
+    "key": "navigation.to.15",
+    "group": "navigation",
+    "label": "Desktop login destination",
+    "type": "link",
+    "section": "Desktop account buttons",
+    "description": "Shown in the desktop account buttons section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "navigation.Link.18",
+    "group": "navigation",
+    "label": "Desktop account request button text",
+    "type": "text",
+    "section": "Desktop account buttons",
+    "description": "Shown in the desktop account buttons section.",
+    "placeholder": "Get Started"
+  },
+  {
+    "key": "navigation.to.17",
+    "group": "navigation",
+    "label": "Desktop account request destination",
+    "type": "link",
+    "section": "Desktop account buttons",
+    "description": "Shown in the desktop account buttons section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "navigation.Link.12",
+    "group": "navigation",
+    "label": "Mobile login button text",
+    "type": "text",
+    "section": "Mobile account buttons",
+    "description": "Shown in the mobile account buttons section.",
+    "placeholder": "Login to your account"
+  },
+  {
+    "key": "navigation.to.11",
+    "group": "navigation",
+    "label": "Mobile login destination",
+    "type": "link",
+    "section": "Mobile account buttons",
+    "description": "Shown in the mobile account buttons section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "navigation.Link.14",
+    "group": "navigation",
+    "label": "Mobile account request button text",
+    "type": "text",
+    "section": "Mobile account buttons",
+    "description": "Shown in the mobile account buttons section.",
+    "placeholder": "Get Started"
+  },
+  {
+    "key": "navigation.to.13",
+    "group": "navigation",
+    "label": "Mobile account request destination",
+    "type": "link",
+    "section": "Mobile account buttons",
+    "description": "Shown in the mobile account buttons section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "footer.to.1",
+    "group": "footer",
+    "label": "Footer logo destination",
+    "type": "link",
+    "section": "Business introduction",
+    "description": "Shown in the business introduction section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "footer.p.3",
+    "group": "footer",
+    "label": "Footer business description",
+    "type": "text",
+    "section": "Business introduction",
+    "description": "A short summary of your business beneath the logo.",
+    "placeholder": "A connected recharge and bill payment workspace for business owners, Distributors, and Retailers."
+  },
+  {
+    "key": "footer.h3.4",
+    "group": "footer",
+    "label": "Services column heading",
+    "type": "text",
+    "section": "Services column",
+    "description": "Shown in the services column section.",
+    "placeholder": "Services"
+  },
+  {
+    "key": "footer.service.5",
+    "group": "footer",
+    "label": "First service name",
+    "type": "text",
+    "section": "Services column",
+    "description": "Shown in the services column section.",
+    "placeholder": "Prepaid Recharge"
+  },
+  {
+    "key": "footer.service.6",
+    "group": "footer",
+    "label": "Second service name",
+    "type": "text",
+    "section": "Services column",
+    "description": "Shown in the services column section.",
+    "placeholder": "DTH Recharge"
+  },
+  {
+    "key": "footer.service.7",
+    "group": "footer",
+    "label": "Third service name",
+    "type": "text",
+    "section": "Services column",
+    "description": "Shown in the services column section.",
+    "placeholder": "Electricity Bill"
+  },
+  {
+    "key": "footer.service.8",
+    "group": "footer",
+    "label": "Fourth service name",
+    "type": "text",
+    "section": "Services column",
+    "description": "Shown in the services column section.",
+    "placeholder": "Bill Payments"
+  },
+  {
+    "key": "footer.to.9",
+    "group": "footer",
+    "label": "Footer services destination",
+    "type": "link",
+    "section": "Services column",
+    "description": "Shown in the services column section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "footer.h3.10",
+    "group": "footer",
+    "label": "Company column heading",
+    "type": "text",
+    "section": "Company links",
+    "description": "Shown in the company links section.",
+    "placeholder": "Company"
+  },
+  {
+    "key": "footer.Link.12",
+    "group": "footer",
+    "label": "About footer link text",
+    "type": "text",
+    "section": "Company links",
+    "description": "Shown in the company links section.",
+    "placeholder": "About Us"
+  },
+  {
+    "key": "footer.to.11",
+    "group": "footer",
+    "label": "About footer link destination",
+    "type": "link",
+    "section": "Company links",
+    "description": "Shown in the company links section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "footer.Link.14",
+    "group": "footer",
+    "label": "Contact footer link text",
+    "type": "text",
+    "section": "Company links",
+    "description": "Shown in the company links section.",
+    "placeholder": "Contact"
+  },
+  {
+    "key": "footer.to.13",
+    "group": "footer",
+    "label": "Contact footer link destination",
+    "type": "link",
+    "section": "Company links",
+    "description": "Shown in the company links section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "footer.Link.16",
+    "group": "footer",
+    "label": "Terms footer link text",
+    "type": "text",
+    "section": "Company links",
+    "description": "Shown in the company links section.",
+    "placeholder": "Terms & Conditions"
+  },
+  {
+    "key": "footer.to.15",
+    "group": "footer",
+    "label": "Terms footer link destination",
+    "type": "link",
+    "section": "Company links",
+    "description": "Shown in the company links section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "footer.Link.18",
+    "group": "footer",
+    "label": "Privacy footer link text",
+    "type": "text",
+    "section": "Company links",
+    "description": "Shown in the company links section.",
+    "placeholder": "Privacy Policy"
+  },
+  {
+    "key": "footer.to.17",
+    "group": "footer",
+    "label": "Privacy footer link destination",
+    "type": "link",
+    "section": "Company links",
+    "description": "Shown in the company links section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "footer.h3.19",
+    "group": "footer",
+    "label": "Footer invitation heading",
+    "type": "text",
+    "section": "Account invitation",
+    "description": "Shown in the account invitation section.",
+    "placeholder": "Get Started Today"
+  },
+  {
+    "key": "footer.p.20",
+    "group": "footer",
+    "label": "Footer invitation description",
+    "type": "text",
+    "section": "Account invitation",
+    "description": "Shown in the account invitation section.",
+    "placeholder": "Access your payments, wallet, and business network through your authorized account."
+  },
+  {
+    "key": "footer.text.23",
+    "group": "footer",
+    "label": "Footer account request button text",
+    "type": "text",
+    "section": "Account invitation",
+    "description": "Shown on the Home, Terms, and Privacy pages.",
+    "placeholder": "Register Now"
+  },
+  {
+    "key": "footer.text.21",
+    "group": "footer",
+    "label": "Footer account request destination",
+    "type": "link",
+    "section": "Account invitation",
+    "description": "Shown in the account invitation section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "footer.text.24",
+    "group": "footer",
+    "label": "Footer login button text",
+    "type": "text",
+    "section": "Account invitation",
+    "description": "Shown on the About and Contact pages.",
+    "placeholder": "Login Now"
+  },
+  {
+    "key": "footer.text.22",
+    "group": "footer",
+    "label": "Footer login destination",
+    "type": "link",
+    "section": "Account invitation",
+    "description": "Shown in the account invitation section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "footer.div.25",
+    "group": "footer",
+    "label": "Footer support heading",
+    "type": "text",
+    "section": "Support panel",
+    "description": "Shown in the support panel section.",
+    "placeholder": "Support"
+  },
+  {
+    "key": "footer.Link.27",
+    "group": "footer",
+    "label": "Footer support link text",
+    "type": "text",
+    "section": "Support panel",
+    "description": "Shown in the support panel section.",
+    "placeholder": "Contact your business administrator"
+  },
+  {
+    "key": "footer.to.26",
+    "group": "footer",
+    "label": "Footer support destination",
+    "type": "link",
+    "section": "Support panel",
+    "description": "Shown in the support panel section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "footer.p.28",
+    "group": "footer",
+    "label": "Copyright symbol",
+    "type": "text",
+    "section": "Copyright and legal links",
+    "description": "Text before the automatically generated year and business name.",
+    "placeholder": "©"
+  },
+  {
+    "key": "footer.p.29",
+    "group": "footer",
+    "label": "Copyright closing text",
+    "type": "text",
+    "section": "Copyright and legal links",
+    "description": "Text after the year and business name.",
+    "placeholder": ". All Rights Reserved."
+  },
+  {
+    "key": "footer.Link.31",
+    "group": "footer",
+    "label": "Bottom terms link text",
+    "type": "text",
+    "section": "Copyright and legal links",
+    "description": "Shown in the copyright and legal links section.",
+    "placeholder": "Terms"
+  },
+  {
+    "key": "footer.to.30",
+    "group": "footer",
+    "label": "Bottom terms destination",
+    "type": "link",
+    "section": "Copyright and legal links",
+    "description": "Shown in the copyright and legal links section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "footer.Link.33",
+    "group": "footer",
+    "label": "Bottom privacy link text",
+    "type": "text",
+    "section": "Copyright and legal links",
+    "description": "Shown in the copyright and legal links section.",
+    "placeholder": "Privacy"
+  },
+  {
+    "key": "footer.to.32",
+    "group": "footer",
+    "label": "Bottom privacy destination",
+    "type": "link",
+    "section": "Copyright and legal links",
+    "description": "Shown in the copyright and legal links section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "auth.text.3",
+    "group": "auth",
+    "label": "Login welcome heading",
+    "type": "text",
+    "section": "Login introduction",
+    "description": "Shown before the business name on the login page.",
+    "placeholder": "Welcome back to"
+  },
+  {
+    "key": "auth.text.5",
+    "group": "auth",
+    "label": "Login welcome description",
+    "type": "text",
+    "section": "Login introduction",
+    "description": "Shown in the login introduction section.",
+    "placeholder": "Manage your recharges, payments, and business network from one connected workspace."
+  },
+  {
+    "key": "auth.text.2",
+    "group": "auth",
+    "label": "Registration welcome heading",
+    "type": "text",
+    "section": "Registration introduction",
+    "description": "Shown before the business name on the account request page.",
+    "placeholder": "Start your business with"
+  },
+  {
+    "key": "auth.text.4",
+    "group": "auth",
+    "label": "Registration welcome description",
+    "type": "text",
+    "section": "Registration introduction",
+    "description": "Shown in the registration introduction section.",
+    "placeholder": "Get connected to a workspace for recharges, bill payments, and your business network."
+  },
+  {
+    "key": "auth.to.1",
+    "group": "auth",
+    "label": "Login and registration logo destination",
+    "type": "link",
+    "section": "Shared features",
+    "description": "Shown in the shared features section. Choose the page visitors should open when they click this link or button."
+  },
+  {
+    "key": "auth.li.6",
+    "group": "auth",
+    "label": "First feature",
+    "type": "text",
+    "section": "Shared features",
+    "description": "Shown in the shared features section.",
+    "placeholder": "Recharge & bill payments"
+  },
+  {
+    "key": "auth.li.7",
+    "group": "auth",
+    "label": "Second feature",
+    "type": "text",
+    "section": "Shared features",
+    "description": "Shown in the shared features section.",
+    "placeholder": "Secure account access"
+  },
+  {
+    "key": "auth.li.8",
+    "group": "auth",
+    "label": "Third feature",
+    "type": "text",
+    "section": "Shared features",
+    "description": "Shown in the shared features section.",
+    "placeholder": "Wallet & commission tracking"
+  },
+  {
+    "key": "auth.li.9",
+    "group": "auth",
+    "label": "Fourth feature",
+    "type": "text",
+    "section": "Shared features",
+    "description": "Shown in the shared features section.",
+    "placeholder": "Transaction reports & analytics"
+  },
+  {
+    "key": "auth.small.10",
+    "group": "auth",
+    "label": "Audience introductory text",
+    "type": "text",
+    "section": "Audience summary",
+    "description": "Shown in the audience summary section.",
+    "placeholder": "Built for"
+  },
+  {
+    "key": "auth.strong.11",
+    "group": "auth",
+    "label": "Audience heading",
+    "type": "text",
+    "section": "Audience summary",
+    "description": "Shown in the audience summary section.",
+    "placeholder": "Your business network"
+  },
+  {
+    "key": "auth.span.12",
+    "group": "auth",
+    "label": "Audience description",
+    "type": "text",
+    "section": "Audience summary",
+    "description": "Shown in the audience summary section.",
+    "placeholder": "Retailers, distributors & business owners"
   }
 ]
