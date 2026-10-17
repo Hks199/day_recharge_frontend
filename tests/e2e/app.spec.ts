@@ -215,7 +215,7 @@ for (const [role, root, paths] of [
             support: "Support tickets",
             notifications: "Notifications",
             payments: "Recharge & bills",
-            tenants: "Businesses",
+            tenants: "Tenants & domains",
             plans: "Subscription plans",
             subscriptions: "Subscriptions",
             providers: "Providers",

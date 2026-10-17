@@ -1,5 +1,10 @@
 import { useState } from "react";
-import { Link, useParams, useSearchParams } from "react-router-dom";
+import {
+  Link,
+  useNavigate,
+  useParams,
+  useSearchParams,
+} from "react-router-dom";
 import { z } from "zod";
 import {
   Alert,
@@ -46,72 +51,95 @@ import {
 } from "../../lib/money";
 import { DomainsPage } from "../settings/SettingsPages";
 export function TenantsPage() {
+  const navigate = useNavigate();
+  const [params, setParams] = useSearchParams();
   const result = useRecords("/platform/tenants", tenantSchema);
   const plans = useResource("/platform/plans", listSchema(planSchema));
   const command = useCommand();
-  const [create, setCreate] = useState(false);
+  const create = params.get("create") === "true";
+  const setCreate = (open: boolean) =>
+    setParams((current) => {
+      if (open) current.set("create", "true");
+      else current.delete("create");
+      return current;
+    });
   return (
     <>
       <PageTitle
-        title="Businesses"
-        description="Provision and manage tenant businesses across the platform."
+        title="Tenants & domains"
+        description="Rent a website to a business with its own owner, subscription, and custom domain."
       >
-        <Button onClick={() => setCreate(true)}>Provision business</Button>
+        <Button onClick={() => setCreate(true)}>Create tenant</Button>
       </PageTitle>
       <Modal
         open={create}
         onOpenChange={setCreate}
-        title="Provision a business"
-        description="Creates the tenant, designated owner, wallet, settings, and subscription together."
+        title="Create a tenant"
+        description="Create the business owner and subscription, then connect their own domain on the next screen."
       >
-        <Form
-          fields={[
-            { name: "name", label: "Business name", validation: name },
-            {
-              name: "slug",
-              label: "Unique slug",
-              validation: z
-                .string()
-                .regex(
-                  /^[a-z0-9-]{3,64}$/,
-                  "Use 3–64 lowercase letters, digits, or hyphens.",
-                ),
-            },
-            {
-              name: "planId",
-              label: "Subscription plan",
-              type: "select",
-              validation: objectId,
-              options:
-                plans.data?.data
-                  .filter((p) => p.active)
-                  .map((p) => ({
-                    value: p._id,
-                    label: `${p.name} · ${p.durationDays} days`,
-                  })) ?? [],
-            },
-            ...personFields.map((f) => ({
-              ...f,
-              name: `owner_${f.name}`,
-              label: `Owner ${f.label.toLowerCase()}`,
-            })),
-          ]}
-          submitLabel="Provision business & owner"
-          onSubmit={async (v) => {
-            await command("/platform/tenants", {
-              name: v.name,
-              slug: v.slug,
-              planId: v.planId,
-              owner: {
-                name: v.owner_name,
-                email: v.owner_email,
-                phone: v.owner_phone,
-                password: v.owner_password,
+        {plans.isPending ? (
+          <Loading />
+        ) : plans.isError ? (
+          <ErrorPanel error={plans.error} retry={() => void plans.refetch()} />
+        ) : !plans.data.data.some((plan) => plan.active) ? (
+          <Alert>
+            Create an active subscription plan before creating a tenant.{" "}
+            <Link className="text-link" to="/platform/plans">
+              Create a plan
+            </Link>
+          </Alert>
+        ) : (
+          <Form
+            fields={[
+              { name: "name", label: "Business name", validation: name },
+              {
+                name: "slug",
+                label: "Unique slug",
+                validation: z
+                  .string()
+                  .regex(
+                    /^[a-z0-9-]{3,64}$/,
+                    "Use 3–64 lowercase letters, digits, or hyphens.",
+                  ),
               },
-            });
-            setCreate(false);
-          }}
-        />
+              {
+                name: "planId",
+                label: "Subscription plan",
+                type: "select",
+                validation: objectId,
+                options:
+                  plans.data?.data
+                    .filter((p) => p.active)
+                    .map((p) => ({
+                      value: p._id,
+                      label: `${p.name} · ${p.durationDays} days`,
+                    })) ?? [],
+              },
+              ...personFields.map((f) => ({
+                ...f,
+                name: `owner_${f.name}`,
+                label: `Owner ${f.label.toLowerCase()}`,
+              })),
+            ]}
+            submitLabel="Create tenant & continue to domain setup"
+            onSubmit={async (v) => {
+              const tenant = tenantSchema.parse(
+                await command("/platform/tenants", {
+                  name: v.name,
+                  slug: v.slug,
+                  planId: v.planId,
+                  owner: {
+                    name: v.owner_name,
+                    email: v.owner_email,
+                    phone: v.owner_phone,
+                    password: v.owner_password,
+                  },
+                }),
+              );
+              navigate(`/platform/tenants/${tenant._id}`);
+            }}
+          />
+        )}
       </Modal>
       <Card>
         {result.isPending ? (
@@ -127,6 +155,17 @@ export function TenantsPage() {
               rows={result.data.data}
               rowKey={(r) => r._id}
               columns={[
+                {
+                  title: "Setup",
+                  render: (r) => (
+                    <Link
+                      className="text-link"
+                      to={`/platform/tenants/${r._id}`}
+                    >
+                      Manage domains
+                    </Link>
+                  ),
+                },
                 {
                   title: "Business",
                   render: (r) => (
@@ -193,6 +232,26 @@ export function TenantDetail() {
           Subscription history
         </Link>
       </PageTitle>
+      <Card>
+        <h2>Connect the tenant's website</h2>
+        <ol>
+          <li>
+            Add the customer's hostname below and publish the supplied DNS TXT
+            record.
+          </li>
+          <li>
+            Verify DNS ownership, then set the verified hostname as primary.
+          </li>
+          <li>
+            Point the hostname to your deployed website and configure HTTPS on
+            your hosting service.
+          </li>
+        </ol>
+        <p>
+          The business owner signs in on their connected domain to manage their
+          website and business.
+        </p>
+      </Card>
       <Card>
         <dl>
           <dt>Status</dt>

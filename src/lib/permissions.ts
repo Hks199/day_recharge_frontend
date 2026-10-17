@@ -42,7 +42,12 @@ export type NavItem = {
 const tenant: Role[] = ["SUPER_ADMIN", "DISTRIBUTOR", "RETAILER"];
 const managers: Role[] = ["SUPER_ADMIN", "DISTRIBUTOR"];
 export const navigation: NavItem[] = [
-  { path: 'website', label: 'Public website', icon: 'domains', roles: ['DEVELOPER', 'SUPER_ADMIN'] },
+  {
+    path: "website",
+    label: "Public website",
+    icon: "domains",
+    roles: ["DEVELOPER", "SUPER_ADMIN"],
+  },
   {
     path: "dashboard",
     label: "Overview",
@@ -89,7 +94,12 @@ export const navigation: NavItem[] = [
     icon: "notifications",
     roles: tenant,
   },
-  { path: "tenants", label: "Businesses", icon: "users", roles: ["DEVELOPER"] },
+  {
+    path: "tenants",
+    label: "Tenants & domains",
+    icon: "users",
+    roles: ["DEVELOPER"],
+  },
   {
     path: "plans",
     label: "Subscription plans",

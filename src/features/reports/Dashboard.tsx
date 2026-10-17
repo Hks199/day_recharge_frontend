@@ -117,12 +117,34 @@ export default function Dashboard() {
         title={`Good to see you, ${user!.name.split(" ")[0]}.`}
         description={`${roleLabel[user!.role]} overview · A clear view of your business today.`}
       >
+        {platform && (
+          <Link className="btn btn-primary" to="/platform/tenants?create=true">
+            Create tenant <ArrowRight size={17} />
+          </Link>
+        )}
         {user!.role === "RETAILER" && (
           <Link className="btn btn-primary" to={`${home}/payments`}>
             New recharge <ArrowRight size={17} />
           </Link>
         )}
       </PageTitle>
+      {platform && (
+        <Card>
+          <h2>Rent a website to a business</h2>
+          <p>
+            Create a tenant with its business owner and subscription plan, then
+            connect and verify the customer's own domain.
+          </p>
+          <div className="actions">
+            <Link className="text-link" to="/platform/tenants">
+              Manage tenants & domains <ArrowRight size={16} />
+            </Link>
+            <Link className="text-link" to="/platform/plans">
+              Manage subscription plans
+            </Link>
+          </div>
+        </Card>
+      )}
       <div className={`metric-grid ${platform ? "four-metrics" : ""}`}>
         {metrics.map((m) => (
           <Card key={m.label}>

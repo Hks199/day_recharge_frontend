@@ -116,49 +116,89 @@ test("Distributor can create Retailers and cannot open payment submission", asyn
   ).toBeVisible();
 });
 
-test("Tenant provisioning uses nested owner and selected plan", async ({
-  page,
-}) => {
-  await fixtures(page, "DEVELOPER");
-  await login(page, "DEVELOPER");
-  await page.getByRole("link", { name: "Businesses", exact: true }).click();
-  await page
-    .getByRole("button", { name: "Provision business", exact: true })
-    .click();
-  await page.getByLabel("Business name", { exact: true }).fill("New Recharge");
-  await page.getByLabel("Unique slug", { exact: true }).fill("new-recharge");
-  await page
-    .getByLabel("Subscription plan", { exact: true })
-    .selectOption(ids.plan);
-  await page
-    .getByLabel("Owner full name", { exact: true })
-    .fill("Business Owner");
-  await page
-    .getByLabel("Owner email address", { exact: true })
-    .fill("owner@example.com");
-  await page
-    .getByLabel("Owner phone number", { exact: true })
-    .fill("9876543210");
-  await page
-    .getByLabel("Owner initial password", { exact: true })
-    .fill("a-secure-owner-password");
-  const request = page.waitForRequest(
-    (r) => r.method() === "POST" && r.url().endsWith("/api/platform/tenants"),
-  );
-  await page
-    .getByRole("button", { name: "Provision business & owner" })
-    .click();
-  expect((await request).postDataJSON()).toEqual({
-    name: "New Recharge",
-    slug: "new-recharge",
-    planId: ids.plan,
-    owner: {
-      name: "Business Owner",
-      email: "owner@example.com",
-      phone: "9876543210",
-      password: "a-secure-owner-password",
-    },
+for (const entry of ["overview", "navigation"] as const) {
+  test(`Tenant provisioning from ${entry} opens domain setup with nested owner and selected plan`, async ({
+    page,
+  }) => {
+    await fixtures(page, "DEVELOPER");
+    await login(page, "DEVELOPER");
+    if (entry === "overview") {
+      await page
+        .getByRole("link", { name: "Create tenant", exact: true })
+        .click();
+    } else {
+      await page
+        .getByRole("link", { name: "Tenants & domains", exact: true })
+        .click();
+      await page
+        .getByRole("button", { name: "Create tenant", exact: true })
+        .click();
+    }
+    await page
+      .getByLabel("Business name", { exact: true })
+      .fill("New Recharge");
+    await page.getByLabel("Unique slug", { exact: true }).fill("new-recharge");
+    await page
+      .getByLabel("Subscription plan", { exact: true })
+      .selectOption(ids.plan);
+    await page
+      .getByLabel("Owner full name", { exact: true })
+      .fill("Business Owner");
+    await page
+      .getByLabel("Owner email address", { exact: true })
+      .fill("owner@example.com");
+    await page
+      .getByLabel("Owner phone number", { exact: true })
+      .fill("9876543210");
+    await page
+      .getByLabel("Owner initial password", { exact: true })
+      .fill("a-secure-owner-password");
+    const request = page.waitForRequest(
+      (r) => r.method() === "POST" && r.url().endsWith("/api/platform/tenants"),
+    );
+    await page
+      .getByRole("button", { name: "Create tenant & continue to domain setup" })
+      .click();
+    expect((await request).postDataJSON()).toEqual({
+      name: "New Recharge",
+      slug: "new-recharge",
+      planId: ids.plan,
+      owner: {
+        name: "Business Owner",
+        email: "owner@example.com",
+        phone: "9876543210",
+        password: "a-secure-owner-password",
+      },
+    });
+    await expect(page).toHaveURL(
+      new RegExp(`/platform/tenants/${ids.tenant}$`),
+    );
+    await expect(
+      page.getByRole("heading", { name: "Custom domains" }),
+    ).toBeVisible();
+    await expect(page.getByLabel("Domain hostname")).toBeVisible();
   });
+}
+
+test("Tenant creation explains the missing active plan", async ({ page }) => {
+  await fixtures(page, "DEVELOPER");
+  await page.route("**/api/platform/plans", (route) =>
+    route.fulfill({
+      contentType: "application/json",
+      body: "[]",
+    }),
+  );
+  await login(page, "DEVELOPER");
+  await page.getByRole("link", { name: "Create tenant", exact: true }).click();
+  await expect(page.getByRole("dialog")).toContainText(
+    "Create an active subscription plan",
+  );
+  await expect(
+    page.getByRole("link", { name: "Create a plan", exact: true }),
+  ).toHaveAttribute("href", "/platform/plans");
+  await expect(page.getByLabel("Business name", { exact: true })).toHaveCount(
+    0,
+  );
 });
 
 test("Login in another tab requires reauthentication in the previous tab", async ({
